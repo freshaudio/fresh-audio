@@ -19,7 +19,7 @@
           {% for show in site.data.shows %}
 
           <li class="show third">
-            <img class="show__image" src="{{ page.url}}/assets/shows/{{show.id}}.jpg" /><!-- {{show.id}} --> <!-- http://placehold.it/320x180 -->
+            <img class="show__image" src="{{ site.url }}/assets/shows/{{show.id}}.jpg" /><!-- {{show.id}} --> <!-- http://placehold.it/320x180 -->
             <h2 class="show__title">{{ show.title }}</h2>
             <span class="show__channel">{{ show.channel }}</span>
           </li>
