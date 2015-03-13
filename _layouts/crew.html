@@ -19,8 +19,8 @@
           {% for member in site.data.crew %}
 
           <li class="member third">
-            <a href="/crew/{{member.id}}" class="member-link">
-              <img class="member__image" src="/assets/crew/crew-{{member.id}}.jpg" />
+            <a href="{{ page.url}}/crew/{{member.id}}" class="member-link">
+              <img class="member__image" src="{{ page.url}}/assets/crew/crew-{{member.id}}.jpg" />
               <h2 class="member__name">{{ member.first_name }}</h2>
             </a>
           </li>
