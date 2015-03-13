@@ -1,0 +1,44 @@
+- id: ryan
+  first_name: Ryan
+  last_name: Patton
+  job: Managing Director/Sound Recordist
+
+- id: amanda
+  first_name: Amanda
+  last_name: Long
+  job: Bookings Manager
+
+- id: mike
+  first_name: Mike
+  last_name: McGinn
+  job: Sound Recordist
+
+- id: adam
+  first_name: Adam
+  last_name: Thomas
+  job: Sound Recordist
+
+- id: dave
+  first_name: Dave
+  last_name: Burn
+  job: Sound Recordist
+
+- id: louis
+  first_name: Louis
+  last_name: Innis
+  job: Sound Recordist
+
+- id: steve
+  first_name: Steve
+  last_name: Llewellyn
+  job: Sound Recordist
+
+- id: jonny
+  first_name: Jonny
+  last_name: Horne
+  job: Sound Recordist
+
+- id: rick
+  first_name: Rick
+  last_name: Entezari
+  job: Sound Recordist

@@ -1,0 +1,441 @@
+/*****NAV***/
+
+*
+  box-sizing: border-box
+
+@mixin fresh-borders($radius)
+  border-top-left-radius: $radius
+  border-bottom-right-radius: $radius
+  border-bottom-left-radius: $radius
+
+@mixin fresh-type($size)
+  font-family: "Lobster", sans-serif
+  font-weight: bold
+  font-size: $size
+  text-transform: lowercase
+
+.north
+  background: top no-repeat url('/assets/media-city-dusk-summer.jpg')
+  h1
+    // position: relative
+    // bottom: 100px
+    letter-spacing: -1px
+    line-height: 1
+    padding: 20px 0 80px
+    .fresh
+      @include fresh-type(42px)
+  h2
+    // @include fresh-type(42px)
+
+.about, .homepage
+  background: top no-repeat url('/assets/bg-about.jpg')
+
+.page-wallpaper
+  // padding-top: 100px
+  position: relative
+  // h1
+  //   background: rgba(255,255,255,.9)
+  //   display: inline-block
+  //   padding: 20px
+  //   @include fresh-borders(10px)
+  @include media-query($on-palm)
+    padding-top: 50px
+
+.page-wallpaper-content
+  @include fresh-borders(10px)
+  background: rgba(255,255,255,.9)
+  padding: 20px
+  // position: relative
+  // bottom: 100px
+
+
+.site-nav
+  float: right
+  margin: 10px 0 10px 10px
+
+
+.site-logo
+  display: none // block
+  border: solid 1px rgba(255,255,255,.2)
+  @include fresh-borders(10px)
+  float: left
+  margin: 10px 10px 10px 0
+  img
+    border: none
+
+.site-branding
+  float: left
+  margin-top: 20px
+  color: #333
+
+.site-branding__text
+  font-size: 50px
+  font-family: 'Lobster'
+  text-transform: lowercase
+  color: white
+  line-height: 1
+
+.site-contact
+  text-align: right
+  color: white
+  font-size: 18px
+  // background-color: white
+  background-color: darken($fresh-blue, 5%)
+  display: inline-block
+  float: right
+  padding: 6px
+  border-bottom-right-radius: 10px
+  border-bottom-left-radius: 10px
+  b
+    display: none
+    text-transform: uppercase
+
+.site-contact__link
+  color: white
+  padding-right: 10px
+
+.page-link
+  font-family: sans-serif, 'Lobster'
+  line-height: 20px
+  background-color: $fresh-blue // #333
+  color: white
+  display: block
+  // text-align: right
+  text-transform: uppercase
+  font-size: 12px
+  float: left
+  padding: 6px
+  @include fresh-borders(8px)
+  min-width: 50px
+
+
+  &:before
+    // content: "fresh"
+    display: block
+    // text-align: right
+    // line-height: 10px
+    // font-size: 16px
+    // padding-top: 16px
+
+  &:hover
+    background-color: darken($fresh-blue, 10%)
+
+  @include media-query($on-laptop)
+
+
+
+.site-header
+  background-color: $fresh-blue
+  position: relative
+
+.site-footer
+  background-color: #EEE
+  border-top: solid 1px #CCC
+
+.page-content
+  background-color: white
+  // padding-top: 30px
+
+.logo--temp
+  background-color: $fresh-blue
+  display: block
+  height: 80px
+  width: 80px
+  border-radius: 10px
+  margin: 10px 20px 10px 0
+  color: white
+  padding: 10px
+  float: left
+
+.contact--temp
+  background: rgba(255,255,255,.1)
+  float: right
+  text-align: right
+  margin: 10px 0
+  @include media-query($on-palm)
+    float: none
+    position: absolute
+    bottom: 0
+    right: 30px
+
+// .site-nav
+//   // position: absolute
+//   // bottom: 10px
+//   // right: 150px
+
+// .fresh-boxed
+//   background-color: #CCC
+//   color: white
+//   border-radius: 10px
+//   padding: 10px
+//   display: inline-block
+
+
+.homepage
+  .post-header
+    padding: 140px 0
+    margin-bottom: 0
+    height: 350px
+
+
+.homepage-title
+  color: white
+  text-shadow: 2px 2px 12px #000
+  text-align: center
+  font-family: sans-serif
+  font-weight: 300
+  font-size: 42px
+  max-width: 800px
+  margin: 0 auto
+  // text-transform: lowercase
+
+.carousel
+  height: 300px 
+
+
+.slick-slide img
+  position: relative
+  &:after
+    position: absolute
+    width: 100%
+    height: 100%
+    left: 0
+    top: 0
+    background-color: rgba(255,0,0,0.5)
+
+/*****GALLERY***/
+
+.polaroid
+  background: white
+  box-shadow: 1px 1px 4px #CCC
+  // border: solid 1px #CCC
+  margin: 0 20px 20px 0
+  padding: 10px 10px 30px
+  float: left
+  width: 300px
+  img
+    margin-bottom: 10px
+  p
+    color: red
+    font-size: 12px
+  &:hover
+    color: #000
+    text-decoration: none
+    p
+      color: black
+
+
+
+/*****SHOWS***/
+
+.shows, .members
+  @extend %clearfix
+
+.show, .member
+  float: left
+  list-style-type: none
+  width: 320px
+  margin-bottom: 20px
+
+.member-link
+  display: block
+  position: relative
+  &:hover
+    .member__name
+      background-color: $fresh-blue
+    .member__image
+      border: solid 3px $fresh-blue
+
+.show__image, .member__image
+  @include fresh-borders(10px)
+  margin-bottom: 5px
+  border: solid 3px rgba(0,0,0,.1)
+
+
+.show__title
+  display: inline-block
+  font-size: 20px
+  font-weight: bold
+  color: #333
+  font-family: "Lobster"
+  text-transform: lowercase
+
+.member__name
+  font-family: "Lobster"
+  color: white
+  position: absolute
+  bottom: 0
+  left: 10px
+  padding: 10px
+  background-color: rgba(0,0,0,0.5)
+  @include fresh-borders(10px)
+
+
+.show__channel
+  font-style: italic
+  font-size: 12px
+  color: #999
+
+/****/
+
+.member-info
+  @extend %clearfix
+  padding: 30px 0
+
+.member-info__image
+  display: block
+  float: left
+  img
+    @include fresh-borders(10px)
+    margin-bottom: 10px
+    border: solid 3px rgba(0,0,0,.1)
+
+.member-info__back
+  display: block
+  margin: 10px 0
+
+.member-info__content__container
+  // background-color: #EEE
+  // @include fresh-borders(10px)
+  // padding: 10px
+
+.member-info__content
+  float: left
+  ul
+    margin-left: 20px
+
+
+/*****NORTH***/
+
+.shows-we-do-up-there
+  padding-top: 20px
+  margin: 20px 0
+  overflow: hidden
+  img
+    display: block
+    float: left
+
+/*****CREW***/
+
+.crew__member
+  float: left
+  padding: 10px 0 10px 10px
+  list-style-type: none
+
+
+
+
+/********/
+
+
+.map
+  background: no-repeat url('/assets/uk.png') 0 0
+  width: 250px
+  height: 389px
+  position: relative
+  float: right
+  bottom: 60px
+
+.map-marker
+  position: absolute
+  background: rgba(0,0,0,.9)
+  color: white
+  display: inline-block
+  padding: 3px
+
+.map__london
+  bottom: 50px
+  right: 20px
+
+.map__manchester
+  top: 220px
+  left: 100px
+
+
+
+/****GRID***/
+
+.half
+  width: 48.8%
+  margin-right: 2.4%
+  &:nth-child(2n)
+    margin-right: 0
+  &:nth-child(2n+1)
+    clear: left
+.third
+  width: 31.7%
+  margin-right: 2.4%
+  &:nth-child(3n)
+    margin-right: 0
+  &:nth-child(3n+1)
+    clear: left
+
+
+.wrapper, .post, .contact--temp
+  // background: rgba(255,0,0,.1)
+  @include media-query($on-palm)
+    background: rgba(0,255,0,.1)
+
+
+.contact__email, .contact__phone
+  background-color: #EEE
+  display: block
+  padding: 10px
+  @include fresh-borders(10px)
+  margin-bottom: 10px
+  width: 300px
+  font-size: 24px
+
+
+
+.icons
+  float: right
+
+.icon
+  text-indent: -9999px
+  display: inline-block
+  height: 60px
+  width: 60px
+
+.icon-facebook
+  background-image: url('/assets/icons/facebook.png')
+.icon-twitter
+  background-image: url('/assets/icons/twitter.png')
+.icon-instagram
+  background-image: url('/assets/icons/instagram.png')
+
+.footer-channels
+  float: left
+/***TEMP *///
+
+.footer-col-3
+  text-align: right
+
+
+// header
+//   background-color: #FFF
+//   color: #005596
+//   h1
+//     color: black
+//   a
+//     color: white
+
+
+// .contact
+//   background: rgba(255,0,0,.1)
+//   float: left
+
+// .contact__name
+//   font-size: 14px
+//   font-weight: bold
+//   margin-bottom: 0
+
+
+// .slick-prev
+//   background-color: red
+
+// .slick-next
+//   background-color: red
+
+.slick-track, .your-class
+  max-height: 200px

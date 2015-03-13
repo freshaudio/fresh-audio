@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper member-info">
+
+        <div class="half member-info__image">
+          <img class="" src="/assets/crew/crew-{{ page.title }}.jpg" />
+        </div>
+        <div class="half member-info__content">
+          <div class="member-info__content__container">
+            {{ content }}
+          </div>
+          <a class="member-info__back" href="/crew">< Back to the rest of the crew</a>
+        </div>
+        
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
