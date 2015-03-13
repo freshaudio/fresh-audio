@@ -9,7 +9,7 @@ description: > # this means to ignore newlines until "baseurl:"
   providing Location Sound Recordist for the television and corporate 
   industries.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://marvinbarretto.github.io/fresh-audio/" # the base hostname & protocol for your site
+url: "http://marvinbarretto.github.io/fresh-audio" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
 
