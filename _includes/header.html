@@ -2,10 +2,10 @@
 
   <div class="wrapper">
 
-    <a class="site-logo" href="{{ site.baseurl }}/" /><img title="{{ site.title }}" src="/assets/logo-100.png" /></a>
-
+<!--     <a class="site-logo" href="{{ site.baseurl }}/" /><img title="{{ site.title }}" src="/assets/logo-100.png" /></a>
+ -->
     <aside class="site-branding">
-      <a class="site-branding__text" href="{{ site.baseurl }}/">Fresh Audio</a>
+      <a class="site-branding__text" href="{{ site.url }}/">Fresh Audio</a>
       <!--div>
         <span><a href="mailto:{{ site.mandy_email }}"><strong>mandy</strong>@freshaudio.tv</a></span>
         <span>{{ site.mandy_number }}</span>
@@ -33,11 +33,11 @@
           <a class="page-link fresh-boxed" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %} -->
-        <a class="page-link fresh-boxed" href="/">Home</a>
-        <a class="page-link fresh-boxed" href="/crew">Crew</a>
-        <a class="page-link fresh-boxed" href="/shows">Shows</a>
-        <a class="page-link fresh-boxed" href="/north">North</a>
-        <a class="page-link fresh-boxed" href="/contact">Contact</a>
+        <a class="page-link fresh-boxed" href="{{ site.url }}/">Home</a>
+        <a class="page-link fresh-boxed" href="{{ site.url }}/crew">Crew</a>
+        <a class="page-link fresh-boxed" href="{{ site.url }}/shows">Shows</a>
+        <a class="page-link fresh-boxed" href="{{ site.url }}/north">North</a>
+        <a class="page-link fresh-boxed" href="{{ site.url }}/contact">Contact</a>
         
         
 
