@@ -32,7 +32,7 @@
 
 .page-wallpaper
   // padding-top: 100px
-  position: relative
+  // position: relative
   // h1
   //   background: rgba(255,255,255,.9)
   //   display: inline-block
@@ -65,62 +65,95 @@
 
 .site-branding
   float: left
-  margin-top: 20px
   color: #333
 
+@media only screen and (max-width : $on-palm)
+  .site-branding
+    margin-top: 10px
+
+@media only screen and (min-width : $on-palm)
+  .site-branding
+    margin-top: 20px
+
+
 .site-branding__text
-  font-size: 50px
   font-family: 'Lobster'
   text-transform: lowercase
-  color: white
   line-height: 1
+  color: white
+
+@media only screen and (max-width : 784px)
+  .site-branding__text
+    font-size: 30px      
+
+@media only screen and (min-width : 784px)
+  .site-branding__text
+    font-size: 50px
+
+
+
+
 
 .site-contact
-  text-align: right
   color: white
-  font-size: 18px
-  // background-color: white
-  background-color: darken($fresh-blue, 5%)
-  display: inline-block
-  float: right
-  padding: 6px
-  border-bottom-right-radius: 10px
-  border-bottom-left-radius: 10px
-  b
-    display: none
-    text-transform: uppercase
+
+@media only screen and (min-width : $on-palm)
+  .site-contact
+    text-align: right
+    font-size: 18px
+    // background-color: white
+    background-color: darken($fresh-blue, 5%)
+    display: inline-block
+    float: right
+    padding: 6px
+    border-bottom-right-radius: 10px
+    border-bottom-left-radius: 10px
+    b
+      display: none
+      text-transform: uppercase
+
+@media only screen and (max-width : $on-palm)
+  .site-contact
+    clear: left
+    padding-top: 5px
+
+
+
+
+
+
 
 .site-contact__link
   color: white
   padding-right: 10px
 
+@media only screen and (max-width : $on-palm)
+  .site-contact__link
+    display: none
+
 .page-link
-  font-family: sans-serif, 'Lobster'
-  line-height: 20px
-  background-color: $fresh-blue // #333
-  color: white
-  display: block
-  // text-align: right
-  text-transform: uppercase
-  font-size: 12px
-  float: left
-  padding: 6px
-  @include fresh-borders(8px)
-  min-width: 50px
+  font-family: sans-serif
 
 
-  &:before
-    // content: "fresh"
+@media only screen and (min-width : $on-palm)
+  .page-link
+    line-height: 20px
+    background-color: $fresh-blue // #333
+    color: white
     display: block
     // text-align: right
-    // line-height: 10px
-    // font-size: 16px
-    // padding-top: 16px
+    text-transform: uppercase
+    font-size: 12px
+    float: left
+    padding: 6px
+    @include fresh-borders(8px)
+    min-width: 50px  
+    &:hover
+      background-color: darken($fresh-blue, 10%)
+  
 
-  &:hover
-    background-color: darken($fresh-blue, 10%)
-
-  @include media-query($on-laptop)
+@media only screen and (max-width : $on-palm)
+  .page-link
 
 
 
@@ -178,6 +211,10 @@
     height: 350px
 
 
+
+
+
+
 .homepage-title
   color: white
   text-shadow: 2px 2px 12px #000
@@ -188,6 +225,15 @@
   max-width: 800px
   margin: 0 auto
   // text-transform: lowercase
+
+
+@media only screen and (max-width : $on-palm)
+  .homepage-title
+    font-size: 32px
+
+
+
+
 
 .carousel
   height: 300px 
@@ -371,10 +417,6 @@
     clear: left
 
 
-.wrapper, .post, .contact--temp
-  // background: rgba(255,0,0,.1)
-  @include media-query($on-palm)
-    background: rgba(0,255,0,.1)
 
 
 .contact__email, .contact__phone
