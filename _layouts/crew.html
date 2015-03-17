@@ -21,7 +21,8 @@
           <li class="member third">
             <a href="{{ site.url }}/crew/{{member.id}}" class="member-link">
               <img class="member__image" src="{{ site.url }}/assets/crew/crew-{{member.id}}.jpg" />
-              <h2 class="member__name">{{ member.first_name }}</h2>
+              <h2 class="member__name">{{ member.first_name }} {{ member.last_name }}<span class="member__job">{{ member.job }}</span></h2>
+
             </a>
           </li>
 

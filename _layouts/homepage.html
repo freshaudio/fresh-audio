@@ -11,28 +11,46 @@
         
       <div class="wrapper">
 
-        
+        <!-- 
 
         <header class="post-header">
           <h1 class="post-title homepage-title">Providing <b>Location Sound Recordists</b> to the <b>TV</b> and <b>digital industries</b></h1>
         </header>
 
-      </div>
-      <div class="your-class" >
-          <div><img src="{{site.url}}/assets/carousel/1-200.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/2-200.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/3-200.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/4-200.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/5-200-cropped.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/6-200.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/7-200.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/8-200.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/9-200.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/10-200.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/11-200.jpg" style="width: 100%" /></div>
-          <div><img src="{{site.url}}/assets/carousel/12-200.jpg" style="width: 100%" /></div>
+         -->
 
-        </div>
+      </div>
+
+      <ul class="bxslider">
+        <li><img src="{{site.url}}/assets/carousel/1-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/2-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/3-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/4-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/5-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/6-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/7-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/8-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/9-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/10-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/11-400.jpg" /></li>
+        <li><img src="{{site.url}}/assets/carousel/12-400.jpg" /></li>
+      </ul>
+
+      <!-- <div class="your-class" >
+        <div><img src="{{site.url}}/assets/carousel/1-400.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/2-400.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/3-400.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/4-400.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/5-400-cropped.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/6-400.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/7-400.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/8-400.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/9-400.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/10-400.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/11-400.jpg" /></div>
+        <div><img src="{{site.url}}/assets/carousel/12-400.jpg" /></div>
+      </div>
+       -->
       <div class="wrapper">
         <div class="page-wallpaper-content">
           {{ content }}
@@ -62,14 +80,20 @@ With production prep times getting shorter and sound setups becoming ever more c
     -->
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <!--
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+  -->
 
+    <script type="text/javascript" src="/assets/jquery.bxslider.min.js"></script>
 
     <style>
     .banner { position: relative; overflow: auto; }
     .banner li { list-style: none; }
     .banner ul li { float: left; }
+
+    .bx-wrapper .bx-viewport { border: none;}
     </style>
 
     <script>
@@ -77,60 +101,66 @@ With production prep times getting shorter and sound setups becoming ever more c
       $(function(){
         console.log("in");
 
-        $('.your-class').slick({
-          centerMode: true,
-          infinite: true,
-          arrows: false,
-          // centerPadding: '40px',
-          slidesToShow: 3,
-          slidesToScroll: 1,
-          autoplay: true,
-          variableWidth: true,
-          autoplaySpeed: 2000
-
-        });
+         $('.bxslider').bxSlider({
+          auto: true,
+          contols: false,
+          pager: false
+         });
 
 
-        // $('.banner').unslider({
-        //   speed: 500,               //  The speed to animate each slide (in milliseconds)
-        //   delay: 3000,              //  The delay between slide animations (in milliseconds)
-        //   complete: function() {},  //  A function that gets called after every slide animation
-        //   keys: true,               //  Enable keyboard (left, right) arrow shortcuts
-        //   dots: true,               //  Display dot navigation
-        //   fluid: false              //  Support responsive design. May break non-responsive designs
-        // });
-
-        // $('.js-carousel').slick({
+        // $('.your-class').slick({
+        //   centerMode: true,
+        //   infinite: true,
+        //   arrows: false,
+        //   // centerPadding: '40px',
+        //   slidesToShow: 3,
+        //   slidesToScroll: 1,
         //   autoplay: true,
-        //   dots: true,
-        //   arrows: true,
-        //   inifinite: true,
-        //   speed: 2000,
-        //   responsive: [
-        //     {
-        //       breakpoint: 600,
-        //       settings: "unslick"
-        //     }
-        //   ]
+        //   variableWidth: true,
+        //   autoplaySpeed: 2000
+        //   // ,
+
+        //   // responsive: [
+        //   //   {
+        //   //     breakpoint: 600,
+        //   //     settings: {
+        //   //       slidesToShow: 2,
+        //   //       slidesToScroll: 1
+        //   //     }
+        //   //   },
+        //   //   {
+        //   //     breakpoint: 480,
+        //   //     settings: {
+        //   //       slidesToShow: 1,
+        //   //       slidesToScroll: 1
+        //   //     }
+        //   //   }
+        //   //   // You can unslick at a given breakpoint now by adding:
+        //   //   // settings: "unslick"
+        //   //   // instead of a settings object
+        //   // ]          
+
         // });
+
+
         
-        $.getJSON('http://www.telize.com/geoip?callback=?', function(json) {
-          console.log('The IP address is: ' + json.ip);
-          console.log('Latitude: ' + json.latitude);
-          console.log('Longitude: ' + json.longitude);
+        // $.getJSON('http://www.telize.com/geoip?callback=?', function(json) {
+        //   console.log('The IP address is: ' + json.ip);
+        //   console.log('Latitude: ' + json.latitude);
+        //   console.log('Longitude: ' + json.longitude);
 
-          console.log(json);
-          var items = [];
+        //   console.log(json);
+        //   var items = [];
 
-          $.each( json, function( key, val) {
-            items.push( "<li>" + val + "</li>");
-          });
+        //   $.each( json, function( key, val) {
+        //     items.push( "<li>" + val + "</li>");
+        //   });
 
-          $( "<ul />", {
-            "class": "list",
-            html: items.join("")
-          }).appendTo("#insta");
-        });
+        //   $( "<ul />", {
+        //     "class": "list",
+        //     html: items.join("")
+        //   }).appendTo("#insta");
+        // });
        
       });
 

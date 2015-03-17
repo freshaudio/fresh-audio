@@ -27,12 +27,12 @@
   h2
     // @include fresh-type(42px)
 
-.about, .homepage
+.about
   background: top no-repeat url('../assets/bg-about.jpg')
 
 .page-wallpaper
   // padding-top: 100px
-  position: relative
+  // position: relative
   // h1
   //   background: rgba(255,255,255,.9)
   //   display: inline-block
@@ -50,8 +50,11 @@
 
 
 .site-nav
+  clear: right
   float: right
   margin: 10px 0 10px 10px
+  position: relative
+  left: 12px // magic number ( 2 * 6 )
 
 
 .site-logo
@@ -65,67 +68,105 @@
 
 .site-branding
   float: left
-  margin-top: 20px
   color: #333
+  margin-top: 10px
+  margin-bottom: 10px
+
 
 .site-branding__text
-  font-size: 50px
   font-family: 'Lobster'
   text-transform: lowercase
-  color: white
   line-height: 1
+  color: white
+
+  display: block
+  width: 72px
+  height: 72px
+  background-color: $fresh-blue
+  @include fresh-borders(10px)
+  box-shadow: 1px 1px 4px #CCC
+
+
+@media only screen and (max-width : 784px)
+  .site-branding__text
+    font-size: 30px      
+
+@media only screen and (min-width : 784px)
+  .site-branding__text
+    font-size: 50px
+
+
+
+
 
 .site-contact
-  text-align: right
-  color: white
-  font-size: 18px
-  // background-color: white
-  background-color: darken($fresh-blue, 5%)
-  display: inline-block
-  float: right
-  padding: 6px
-  border-bottom-right-radius: 10px
-  border-bottom-left-radius: 10px
-  b
-    display: none
-    text-transform: uppercase
+  color: $fresh-blue
+  margin-top: 20px
+  font-family: 'Open Sans'
+  // background-color: $fresh-blue
+  // color: white
+  // padding: 4px
 
-.site-contact__link
-  color: white
-  padding-right: 10px
+@media only screen and (min-width : $on-palm)
+  .site-contact
+    float: right
+    a
+      // color: white
+    b
+      // display: none
+      text-transform: uppercase
+      margin-right: 10px
+
+@media only screen and (max-width : $on-palm)
+  .site-contact
+    clear: left
+    padding-top: 5px
+
+
+
+.site-contact__number
+  margin-left: 10px
+
+
+
+// .site-contact__link
+//   color: white
+//   padding-right: 10px
+
+// @media only screen and (max-width : $on-palm)
+//   .site-contact__link
+//     display: none
 
 .page-link
-  font-family: sans-serif, 'Lobster'
-  line-height: 20px
-  background-color: $fresh-blue // #333
-  color: white
-  display: block
-  // text-align: right
+  font-family: 'Open Sans', sans-serif
+  color: #333
   text-transform: uppercase
-  font-size: 12px
-  float: left
+  font-weight: bold
   padding: 6px
-  @include fresh-borders(8px)
-  min-width: 50px
 
+@media only screen and (min-width : $on-palm)
+  .page-link
+    // line-height: 20px
+    // background-color: $fresh-blue // #333
+    // color: white
+    // display: block
+    // text-transform: uppercase
+    // font-size: 12px
+    // float: left
+    // padding: 6px
+    @include fresh-borders(8px)
+    // min-width: 50px  
+    &:hover
+      background-color: #DDD
+  
 
-  &:before
-    // content: "fresh"
-    display: block
-    // text-align: right
-    // line-height: 10px
-    // font-size: 16px
-    // padding-top: 16px
-
-  &:hover
-    background-color: darken($fresh-blue, 10%)
-
-  @include media-query($on-laptop)
+@media only screen and (max-width : $on-palm)
+  .page-link
 
 
 
 .site-header
-  background-color: $fresh-blue
+  background-color: #EEE
   position: relative
 
 .site-footer
@@ -178,6 +219,10 @@
     height: 350px
 
 
+
+
+
+
 .homepage-title
   color: white
   text-shadow: 2px 2px 12px #000
@@ -188,6 +233,15 @@
   max-width: 800px
   margin: 0 auto
   // text-transform: lowercase
+
+
+@media only screen and (max-width : $on-palm)
+  .homepage-title
+    font-size: 32px
+
+
+
+
 
 .carousel
   height: 300px 
@@ -212,7 +266,7 @@
   margin: 0 20px 20px 0
   padding: 10px 10px 30px
   float: left
-  width: 300px
+  // width: 300px
   img
     margin-bottom: 10px
   p
@@ -254,14 +308,15 @@
 
 .show__title
   display: inline-block
-  font-size: 20px
-  font-weight: bold
+  font-size: 18px
+  margin-bottom: 0
+  // font-weight: bold
   color: #333
-  font-family: "Lobster"
-  text-transform: lowercase
+  font-family: "Open Sans", sans-serif // Lobster
+  // text-transform: lowercase
 
 .member__name
-  font-family: "Lobster"
+  font-family: "Open Sans", sans-serif // Lobster
   color: white
   position: absolute
   bottom: 0
@@ -270,6 +325,9 @@
   background-color: rgba(0,0,0,0.5)
   @include fresh-borders(10px)
 
+.member__job
+  font-size: 12px
+  display: block
 
 .show__channel
   font-style: italic
@@ -298,18 +356,18 @@
   // background-color: #EEE
   // @include fresh-borders(10px)
   // padding: 10px
-
-.member-info__content
-  float: left
   ul
     margin-left: 20px
 
+.member-info__content
+  float: left
+  
 
 /*****NORTH***/
 
 .shows-we-do-up-there
-  padding-top: 20px
-  margin: 20px 0
+  // padding-top: 20px
+  margin: 0 0 20px 0
   overflow: hidden
   img
     display: block
@@ -329,7 +387,7 @@
 
 
 .map
-  background: no-repeat url('../assets/uk.png') 0 0
+  background: no-repeat url('../assets/uk-ccc.png') 0 0
   width: 250px
   height: 389px
   position: relative
@@ -338,18 +396,24 @@
 
 .map-marker
   position: absolute
-  background: rgba(0,0,0,.9)
+  background-color: $fresh-blue
+  // background: rgba(0,0,0,.9)
   color: white
   display: inline-block
-  padding: 3px
+  // padding: 3px
+  text-indent: -9999px
+  width: 25px
+  height: 25px
+  @include fresh-borders(5px)
+
 
 .map__london
-  bottom: 50px
-  right: 20px
+  bottom: 40px
+  right: 50px
 
 .map__manchester
-  top: 220px
-  left: 100px
+  top: 235px
+  left: 140px
 
 
 
@@ -371,10 +435,6 @@
     clear: left
 
 
-.wrapper, .post, .contact--temp
-  // background: rgba(255,0,0,.1)
-  @include media-query($on-palm)
-    background: rgba(0,255,0,.1)
 
 
 .contact__email, .contact__phone
@@ -437,5 +497,10 @@
 // .slick-next
 //   background-color: red
 
+.your-class
+  overflow: hidden
+  div img
+    width: 100%
+    background-size: cover
 .slick-track, .your-class
-  max-height: 200px
+  max-height: 400px
