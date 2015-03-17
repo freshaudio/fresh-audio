@@ -7,7 +7,7 @@ $(function(){
       get: 'user',
       userId: 1571068740,
       accessToken: '1571068740.467ede5.cb9c1a592e0041cc91994b2e0476c5f6',
-      template: '<a href="{{link}}" class="polaroid"><img src="{{image}}"><p>{{caption}}</p></a>',
+      template: '<a href="{{link}}" class="polaroid third"><img src="{{image}}"><p>{{caption}}</p></a>',
       resolution: 'low_resolution',
       before: beforeFunc, 
       after: afterFunc
