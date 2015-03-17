@@ -216,9 +216,10 @@
 }
 
 .post-title {
-  font-family: 'Lobster';
-    font-size: 42px;
-    letter-spacing: -1px;
+  font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    // text-transform: uppercase;
+    // letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {
