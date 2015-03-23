@@ -316,7 +316,8 @@
   position: relative
   &:hover
     .member__name
-      background-color: $fresh-blue
+      // background-color: $fresh-blue
+      color: $fresh-blue
     .member__image
       border: solid 3px $fresh-blue
 
@@ -333,14 +334,13 @@
 
 
 .member__name
-  font-family: "Open Sans", sans-serif // Lobster
-  color: white
-  position: absolute
-  bottom: 0
-  left: 10px
-  padding: 10px
-  background-color: rgba(0,0,0,0.5)
-  @include fresh-borders(10px)
+  color: #333
+  // position: absolute
+  // bottom: 0
+  // left: 10px
+  // padding: 10px
+  // background-color: rgba(0,0,0,0.5)
+  // @include fresh-borders(10px)
 
 .member__job
   font-size: 12px
@@ -363,16 +363,21 @@
   img
     @include fresh-borders(10px)
     margin-bottom: 10px
-    border: solid 3px rgba(0,0,0,.1)
+    border: solid 10px rgba(0,0,0,.1)
 
 .member-info__back
   display: block
   margin: 10px 0
 
 .member-info__content__container
-  // background-color: #EEE
-  // @include fresh-borders(10px)
-  // padding: 10px
+  h1
+    @extend .primary-heading
+    
+  h1 + p
+    @include fresh-borders(8px)
+    background-color: white
+
+
   ul
     margin-left: 20px
 
