@@ -211,19 +211,19 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
-    padding-top: 30px;
+    // margin-bottom: $spacing-unit;
+    padding-top: 20px
 }
 
 .post-title {
-  font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
+  // font-family: 'Open Sans', sans-serif;
+    // font-size: 32px;
     // text-transform: uppercase;
     // letter-spacing: -1px;
-    line-height: 1;
+    // line-height: 1;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        // font-size: 36px;
     }
 }
 

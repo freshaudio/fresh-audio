@@ -3,6 +3,7 @@
 *
   box-sizing: border-box
 
+/* Mixins */
 @mixin fresh-borders($radius)
   border-top-left-radius: $radius
   border-bottom-right-radius: $radius
@@ -13,6 +14,32 @@
   font-weight: bold
   font-size: $size
   text-transform: lowercase
+
+
+/* Extends */
+
+.primary-heading
+  font-size: 26px
+  line-height: 1
+  color: #333
+  margin-bottom: 24px
+
+.secondary-heading
+  font-size: 20px
+  line-height: 1.272
+  margin-bottom: 24px
+
+
+/****/
+
+
+.post-title
+  @extend .primary-heading
+
+
+
+
+
 
 .north
   background: top no-repeat url('../assets/media-city-dusk-summer.jpg')
@@ -167,15 +194,15 @@
 
 
 .site-header
-  background-color: #EEE
+  background-color: #FFF
   position: relative
 
 .site-footer
-  background-color: #EEE
+  background-color: $fresh-blue
   border-top: solid 1px #CCC
 
 .page-content
-  background-color: white
+  background-color: #EEE
   // padding-top: 30px
 
 .logo--temp
@@ -292,18 +319,15 @@
 
 .show__image, .member__image
   @include fresh-borders(10px)
-  margin-bottom: 5px
+  margin-bottom: 10px
   border: solid 3px rgba(0,0,0,.1)
 
 
 .show__title
+  @extend .secondary-heading
   display: inline-block
-  font-size: 18px
   margin-bottom: 0
-  // font-weight: bold
-  color: #333
-  font-family: "Open Sans", sans-serif // Lobster
-  // text-transform: lowercase
+
 
 .member__name
   font-family: "Open Sans", sans-serif // Lobster
