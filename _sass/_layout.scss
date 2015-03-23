@@ -24,7 +24,7 @@
 }
 
 .site-nav {
-    float: right;
+
     // line-height: 56px;
 
     // background-color: yellow;
@@ -54,11 +54,11 @@
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
-            margin-left: 8px;
+            margin-left: 36px;
         }
     }
 
-    @include media-query($on-palm) {
+    @include media-query(757px) {
         position: absolute;
         top: 9px;
         right: 30px;

@@ -52,10 +52,11 @@
 .site-nav
   clear: right
   float: right
-  margin: 10px 0 10px 10px
+  margin: 60px 0 10px 10px
   position: relative
   left: 12px // magic number ( 2 * 6 )
-
+  @include media-query(757px)
+    margin-top: 0
 
 .site-logo
   display: none // block
@@ -69,8 +70,8 @@
 .site-branding
   float: left
   color: #333
-  margin-top: 10px
-  margin-bottom: 10px
+  margin-top: 20px
+  margin-bottom: 20px
 
 
 .site-branding__text
@@ -101,8 +102,8 @@
 
 .site-contact
   color: $fresh-blue
-  margin-top: 20px
-  font-family: 'Open Sans'
+  // margin-top: 20px
+  // font-family: 'Open Sans'
   // background-color: $fresh-blue
   // color: white
   // padding: 4px
@@ -199,17 +200,6 @@
     bottom: 0
     right: 30px
 
-// .site-nav
-//   // position: absolute
-//   // bottom: 10px
-//   // right: 150px
-
-// .fresh-boxed
-//   background-color: #CCC
-//   color: white
-//   border-radius: 10px
-//   padding: 10px
-//   display: inline-block
 
 
 .homepage
