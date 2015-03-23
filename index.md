@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: Home
+title: Fresh Audio
 nav: true
 ---
 
