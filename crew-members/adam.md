@@ -4,7 +4,9 @@ title: Adam
 permalink: /crew/adam/
 ---
 
-# Adam
+# Adam Thomas
+_Sound Recordist_
+
 Likes to be tickled.. odd.
 
 ## Recent work:

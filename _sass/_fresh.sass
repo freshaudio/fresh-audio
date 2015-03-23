@@ -372,14 +372,25 @@
 .member-info__content__container
   h1
     @extend .primary-heading
-    
-  h1 + p
+    margin-bottom: 4px
+
+  h1 + p + p
+    background-color: rgba(0,0,0,.1)
     @include fresh-borders(8px)
-    background-color: white
+    font-weight: bold
+    padding: 8px
 
+  h2
+    @extend .secondary-heading
+    margin: 20px 0 4px
 
-  ul
+  h2 + ul
     margin-left: 20px
+
+  ul + p
+    background-color: white
+    padding: 8px
+    @include fresh-borders(8px)
 
 .member-info__content
   float: left

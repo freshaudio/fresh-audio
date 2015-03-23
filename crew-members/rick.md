@@ -4,7 +4,9 @@ title: Rick
 permalink: /crew/rick/
 ---
 
-# Rick
+# Rick Entezari
+_Sound Recordist_
+
 Slick
 
 ## Recent work:

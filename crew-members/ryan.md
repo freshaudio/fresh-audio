@@ -4,7 +4,9 @@ title: Ryan
 permalink: /crew/ryan/
 ---
 
-# Ryan
+# Ryan Patton
+_Managing Director/Sound Recordist_
+
 Won Wimbledon at the age of 16.
 
 ## Recent work:
