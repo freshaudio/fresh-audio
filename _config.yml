@@ -5,9 +5,9 @@ ryan_number: +44 (0)7920 114 914
 mandy_email: amanda@freshaudio.tv
 mandy_number: +44 (0)7984 189 135
 description: > # this means to ignore newlines until "baseurl:"
-  Fresh Audio is a London and Manchester based company specialising in 
-  providing Location Sound Recordist for the television and corporate 
-  industries.
+  Fresh Audio is an audio specific crewing company based in London and Manchester.
+  We take the hassle out of booking good, friendly Location Sound Recordists to
+  match your productions specific needs.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://marvinbarretto.github.io/fresh-audio" # the base hostname & protocol for your site
 twitter_username: jekyllrb
