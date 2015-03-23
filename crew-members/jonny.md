@@ -4,7 +4,9 @@ title: Jonny
 permalink: /crew/jonny/
 ---
 
-# Jonny
+# Jonny Horne
+_Sound Recordist_
+
 Your friendly neighbourhood sound recordist...
 
 ## Recent work:

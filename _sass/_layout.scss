@@ -24,7 +24,7 @@
 }
 
 .site-nav {
-    float: right;
+
     // line-height: 56px;
 
     // background-color: yellow;
@@ -54,24 +54,23 @@
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
-            margin-left: 8px;
+            margin-left: 36px;
         }
     }
 
-    @include media-query($on-palm) {
+    @include media-query($break-medium) {
         position: absolute;
         top: 9px;
         right: 30px;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+        // @include fresh-borders(5px);
 
         .menu-icon {
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
+            height: 36px;
             line-height: 0;
             padding-top: 10px;
             text-align: center;
@@ -126,7 +125,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: rgba(255,255,255,.4);
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -211,19 +210,26 @@
  * Posts
  */
 .post-header {
-    margin-bottom: $spacing-unit;
-    padding-top: 30px;
+    // margin-bottom: $spacing-unit;
+    padding-top: 20px
 }
 
 .post-title {
-  font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
+  // font-family: 'Open Sans', sans-serif;
+    // font-size: 32px;
     // text-transform: uppercase;
     // letter-spacing: -1px;
-    line-height: 1;
+    // line-height: 1;
+    @media only screen and (max-width: 480px) {
+        text-align: center
+    }
+    @media only screen and (min-width: 480px) {
+        text-align: left
+    }
+    
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        // font-size: 36px;
     }
 }
 

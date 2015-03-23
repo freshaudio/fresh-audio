@@ -4,7 +4,9 @@ title: Amanda
 permalink: /crew/amanda/
 ---
 
-# Amanda
+# Amanda Long
+_Bookings Manager_
+
 AKA Mand, absolutely loves Helvetica
 
 10 years experience in managing crew and production logistics both on and off the set.

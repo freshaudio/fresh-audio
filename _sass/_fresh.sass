@@ -3,6 +3,7 @@
 *
   box-sizing: border-box
 
+/* Mixins */
 @mixin fresh-borders($radius)
   border-top-left-radius: $radius
   border-bottom-right-radius: $radius
@@ -14,6 +15,54 @@
   font-size: $size
   text-transform: lowercase
 
+
+/* Extends */
+
+.primary-heading
+  font-size: 26px
+  line-height: 1
+  color: #333
+  margin-bottom: 24px
+
+.secondary-heading
+  font-size: 20px
+  line-height: 1.272
+  margin-bottom: 24px
+
+/****GRID***/
+
+.half
+  width: 48.8%
+  margin-right: 2.4%
+  &:nth-child(2n)
+    margin-right: 0
+  &:nth-child(2n+1)
+    clear: left
+
+.third
+  width: 31.7%
+  margin-right: 2.4%
+  &:nth-child(3n)
+    margin-right: 0
+  &:nth-child(3n+1)
+    clear: left
+
+
+
+/****/
+
+
+.post-title
+  @extend .primary-heading
+
+
+
+
+
+.homepage-content
+  padding-top: 20px
+
+
 .north
   background: top no-repeat url('../assets/media-city-dusk-summer.jpg')
   h1
@@ -22,13 +71,11 @@
     letter-spacing: -1px
     line-height: 1
     padding: 0 0 240px
-    .fresh
-      @include fresh-type(42px)
-  h2
-    // @include fresh-type(42px)
 
-.about, .homepage
+.about
   background: top no-repeat url('../assets/bg-about.jpg')
+  .post-header
+    padding: 0 0 290px
 
 .page-wallpaper
   // padding-top: 100px
@@ -43,18 +90,35 @@
 
 .page-wallpaper-content
   @include fresh-borders(10px)
-  background: rgba(255,255,255,.9)
+  background: #EEE // rgba(255,255,255,.9)
   padding: 20px
   // position: relative
   // bottom: 100px
 
 
 .site-nav
-  clear: right
-  float: right
-  margin: 10px 0 10px 10px
-  position: relative
-  left: 12px // magic number ( 2 * 6 )
+  z-index: 1000
+  @include media-query(865px)
+    margin-top: 0
+
+@media only screen and (max-width : 768px)
+  .site-nav
+    text-align: right
+    float: none
+    margin: 20px 0
+
+@media only screen and (min-width : 768px) and (max-width : 865px)
+  .site-nav
+    text-align: center
+    float: none
+    margin: 20px 0
+
+@media only screen and (min-width : 865px)
+  .site-nav
+    clear: right
+    float: right
+    text-align: right
+    margin: 60px 0 10px 10px
 
 
 .site-logo
@@ -66,43 +130,47 @@
   img
     border: none
 
+
+
 .site-branding
-  float: left
   color: #333
-  margin-top: 10px
-  margin-bottom: 10px
+
+@media only screen and (max-width : 840px)
+  .site-branding
+    float: none
+    padding-top: 10px
+    padding-bottom: 10px
+
+@media only screen and (min-width : 840px)
+  .site-branding
+    float: left
+    margin-top: 10px
+    margin-bottom: 10px
+
 
 
 .site-branding__text
-  font-family: 'Lobster'
-  text-transform: lowercase
-  line-height: 1
-  color: white
+  margin-left: auto
+  margin-right: auto
 
   display: block
-  width: 72px
-  height: 72px
+  width: 92px
+  height: 92px
   background-color: $fresh-blue
   @include fresh-borders(10px)
   box-shadow: 1px 1px 4px #CCC
 
-
-@media only screen and (max-width : 784px)
-  .site-branding__text
-    font-size: 30px      
-
-@media only screen and (min-width : 784px)
-  .site-branding__text
-    font-size: 50px
 
 
 
 
 
 .site-contact
-  color: $fresh-blue
-  margin-top: 20px
-  font-family: 'Open Sans'
+  color: white
+  a
+    color: white
+  // margin-top: 20px
+  // font-family: 'Open Sans'
   // background-color: $fresh-blue
   // color: white
   // padding: 4px
@@ -144,37 +212,35 @@
   font-weight: bold
   padding: 6px
 
-@media only screen and (min-width : $on-palm)
+@media only screen and (min-width : $break-medium)
   .page-link
-    // line-height: 20px
-    // background-color: $fresh-blue // #333
-    // color: white
-    // display: block
-    // text-transform: uppercase
-    // font-size: 12px
-    // float: left
-    // padding: 6px
     @include fresh-borders(8px)
-    // min-width: 50px  
     &:hover
-      background-color: #DDD
+      background-color: #EEE
   
-
-@media only screen and (max-width : $on-palm)
-  .page-link
-
 
 
 .site-header
-  background-color: #EEE
+  background-color: white
+  // background: rgb(170,170,170) /* Old browsers */
+  // /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  // background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q4ZDhkOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+)
+  // background: -moz-linear-gradient(top,  rgba(170,170,170,1) 0%, rgba(255,255,255,1) 100%) /* FF3.6+ */
+  // background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(170,170,170,1)), color-stop(100%,rgba(255,255,255,1))) /* Chrome,Safari4+ */
+  // background: -webkit-linear-gradient(top,  rgba(170,170,170,1) 0%,rgba(255,255,255,1) 100%) /* Chrome10+,Safari5.1+ */
+  // background: -o-linear-gradient(top,  rgba(170,170,170,1) 0%,rgba(255,255,255,1) 100%) /* Opera 11.10+ */
+  // background: -ms-linear-gradient(top,  rgba(170,170,170,1) 0%,rgba(255,255,255,1) 100%) /* IE10+ */
+  // background: linear-gradient(to bottom,  rgba(170,170,170,1) 0%,rgba(255,255,255,1) 100%) /* W3C */
+
+  border-bottom: dashed 1px #DDD
   position: relative
 
 .site-footer
-  background-color: #EEE
-  border-top: solid 1px #CCC
+  background-color: $fresh-blue
+  // border-top: solid 1px #333
 
 .page-content
-  background-color: white
+  background-color: #EEE
   // padding-top: 30px
 
 .logo--temp
@@ -199,17 +265,6 @@
     bottom: 0
     right: 30px
 
-// .site-nav
-//   // position: absolute
-//   // bottom: 10px
-//   // right: 150px
-
-// .fresh-boxed
-//   background-color: #CCC
-//   color: white
-//   border-radius: 10px
-//   padding: 10px
-//   display: inline-block
 
 
 .homepage
@@ -243,6 +298,75 @@
 
 
 
+.homepage-cols
+  @extend %clearfix
+
+  aside
+    @extend .half
+    float: left
+
+
+
+.triangle-right
+  position: relative
+  &:after
+    content: ""
+    position: absolute
+    bottom: -20px
+    right: 30px
+    border-width: 20px 0 0 20px
+    border-style: solid
+    border-color: white transparent
+    display: block
+    width: 0
+
+
+.homepage-cols__title
+  background-color: $fresh-blue
+  color: white
+  padding: 4px 10px
+  @include fresh-borders(5px)
+
+.homepage-cols__title-twitter
+  float: right
+  color: rgba(255,255,255,.4)
+
+.homepage-content__strapline
+  background-color: white
+  @include fresh-borders(10px)
+  padding: 10px 100px
+  color: $fresh-blue
+  // @include fresh-type(40px)
+  text-align: center
+  b
+    font-size: 40px
+
+.homepage-cols__tweets
+  ul
+    list-style-type: none
+    li
+      background-color: white
+      padding: 10px
+      @include fresh-borders(10px)
+      margin-bottom: 40px
+      position: relative
+      @extend .triangle-right
+
+  .tweet
+    margin-bottom: 20px
+
+  .timePosted
+    margin-bottom: 0
+    position: absolute
+    right: 8px
+    bottom: 8px
+    color: #CCC
+    font-size: 12px
+
+  .interact
+    display: none
+
+
 .carousel
   height: 300px 
 
@@ -263,10 +387,10 @@
   background: white
   box-shadow: 1px 1px 4px #CCC
   // border: solid 1px #CCC
-  margin: 0 20px 20px 0
+  margin-bottom: 20px
   padding: 10px 10px 30px
   float: left
-  // width: 300px
+  
   img
     margin-bottom: 10px
   p
@@ -279,51 +403,79 @@
       color: black
 
 
+.polaroid
+  transition: transform .15s linear
+.polaroid:nth-child(odd)
+  transform: rotate(-2deg)
+.polaroid:nth-child(even)
+  transform: rotate(2deg)
+.polaroid:nth-child(5n)
+  transform: rotate(5deg)
+  position: relative
+  right: 5px
+.polaroid:hover
+  transform: scale(1.1)
+  position: relative
+  z-index: 5
 
 /*****SHOWS***/
 
-.shows, .members
+.shows, .members, #instafeed
   @extend %clearfix
 
 .show, .member
   float: left
   list-style-type: none
-  width: 320px
-  margin-bottom: 20px
+  margin-bottom: 30px
+  // text-align: center
+  width: 100% // 320
+
+  @media only screen and (min-width: 480px) and (max-width : 680px)
+    width: 48.8%
+    margin-right: 2.4%
+    &:nth-child(2n)
+      margin-right: 0
+    &:nth-child(2n+1)
+      clear: left
+
+  @media only screen and (min-width : 680px)
+    width: 31.7%
+    margin-right: 2.4%
+    &:nth-child(3n)
+      margin-right: 0
+    &:nth-child(3n+1)
+      clear: left
 
 .member-link
   display: block
   position: relative
   &:hover
     .member__name
-      background-color: $fresh-blue
+      // background-color: $fresh-blue
+      color: $fresh-blue
     .member__image
       border: solid 3px $fresh-blue
 
 .show__image, .member__image
   @include fresh-borders(10px)
-  margin-bottom: 5px
+  margin-bottom: 10px
   border: solid 3px rgba(0,0,0,.1)
 
 
 .show__title
-  display: inline-block
-  font-size: 18px
+  @extend .secondary-heading
   margin-bottom: 0
-  // font-weight: bold
-  color: #333
-  font-family: "Open Sans", sans-serif // Lobster
-  // text-transform: lowercase
+  @media only screen and (min-width: 680px) 
+    display: inline-block
 
 .member__name
-  font-family: "Open Sans", sans-serif // Lobster
-  color: white
-  position: absolute
-  bottom: 0
-  left: 10px
-  padding: 10px
-  background-color: rgba(0,0,0,0.5)
-  @include fresh-borders(10px)
+  color: #333
+  // position: absolute
+  // bottom: 0
+  // left: 10px
+  // padding: 10px
+  // background-color: rgba(0,0,0,0.5)
+  // @include fresh-borders(10px)
 
 .member__job
   font-size: 12px
@@ -346,18 +498,34 @@
   img
     @include fresh-borders(10px)
     margin-bottom: 10px
-    border: solid 3px rgba(0,0,0,.1)
+    border: solid 10px rgba(0,0,0,.1)
 
 .member-info__back
   display: block
   margin: 10px 0
 
 .member-info__content__container
-  // background-color: #EEE
-  // @include fresh-borders(10px)
-  // padding: 10px
-  ul
+  h1
+    @extend .primary-heading
+    margin-bottom: 4px
+
+  h1 + p + p
+    background-color: rgba(0,0,0,.1)
+    @include fresh-borders(8px)
+    font-weight: bold
+    padding: 8px
+
+  h2
+    @extend .secondary-heading
+    margin: 20px 0 4px
+
+  h2 + ul
     margin-left: 20px
+
+  ul + p
+    background-color: white
+    padding: 8px
+    @include fresh-borders(8px)
 
 .member-info__content
   float: left
@@ -384,6 +552,7 @@
 
 
 /********/
+
 
 
 .map
@@ -417,28 +586,11 @@
 
 
 
-/****GRID***/
-
-.half
-  width: 48.8%
-  margin-right: 2.4%
-  &:nth-child(2n)
-    margin-right: 0
-  &:nth-child(2n+1)
-    clear: left
-.third
-  width: 31.7%
-  margin-right: 2.4%
-  &:nth-child(3n)
-    margin-right: 0
-  &:nth-child(3n+1)
-    clear: left
-
 
 
 
 .contact__email, .contact__phone
-  background-color: #EEE
+  background-color: white
   display: block
   padding: 10px
   @include fresh-borders(10px)
@@ -489,13 +641,3 @@
 //   font-size: 14px
 //   font-weight: bold
 //   margin-bottom: 0
-
-
-// .slick-prev
-//   background-color: red
-
-// .slick-next
-//   background-color: red
-
-.slick-track, .your-class
-  max-height: 200px
