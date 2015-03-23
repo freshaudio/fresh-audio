@@ -305,10 +305,10 @@
   background: white
   box-shadow: 1px 1px 4px #CCC
   // border: solid 1px #CCC
-  margin: 0 20px 20px 0
+  margin-bottom: 20px
   padding: 10px 10px 30px
   float: left
-  // width: 300px
+  
   img
     margin-bottom: 10px
   p
@@ -321,17 +321,31 @@
       color: black
 
 
+.polaroid
+  transition: transform .15s linear
+.polaroid:nth-child(odd)
+  transform: rotate(-2deg)
+.polaroid:nth-child(even)
+  transform: rotate(2deg)
+.polaroid:nth-child(5n)
+  transform: rotate(5deg)
+  position: relative
+  right: 5px
+.polaroid:hover
+  transform: scale(1.1)
+  position: relative
+  z-index: 5
 
 /*****SHOWS***/
 
-.shows, .members
+.shows, .members, #instafeed
   @extend %clearfix
 
 .show, .member
   float: left
   list-style-type: none
   margin-bottom: 20px
-  text-align: center
+  // text-align: center
   width: 100% // 320
 
   @media only screen and (min-width: 480px) and (max-width : 680px)
@@ -371,7 +385,6 @@
   margin-bottom: 0
   @media only screen and (min-width: 680px) 
     display: inline-block
-
 
 .member__name
   color: #333
@@ -494,7 +507,7 @@
 
 
 .contact__email, .contact__phone
-  background-color: #EEE
+  background-color: white
   display: block
   padding: 10px
   @include fresh-borders(10px)
