@@ -64,14 +64,14 @@
         right: 30px;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+        // @include fresh-borders(5px);
+        color: red;
 
         .menu-icon {
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
+            height: 36px;
             line-height: 0;
             padding-top: 10px;
             text-align: center;
@@ -221,6 +221,13 @@
     // text-transform: uppercase;
     // letter-spacing: -1px;
     // line-height: 1;
+    @media only screen and (max-width: 480px) {
+        text-align: center
+    }
+    @media only screen and (min-width: 480px) {
+        text-align: left
+    }
+    
 
     @include media-query($on-laptop) {
         // font-size: 36px;

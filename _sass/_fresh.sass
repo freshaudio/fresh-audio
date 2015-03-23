@@ -29,14 +29,31 @@
   line-height: 1.272
   margin-bottom: 24px
 
+/****GRID***/
+
+.half
+  width: 48.8%
+  margin-right: 2.4%
+  &:nth-child(2n)
+    margin-right: 0
+  &:nth-child(2n+1)
+    clear: left
+
+.third
+  width: 31.7%
+  margin-right: 2.4%
+  &:nth-child(3n)
+    margin-right: 0
+  &:nth-child(3n+1)
+    clear: left
+
+
 
 /****/
 
 
 .post-title
   @extend .primary-heading
-
-
 
 
 
@@ -80,13 +97,29 @@
 
 
 .site-nav
-  clear: right
-  float: right
-  margin: 60px 0 10px 10px
-  position: relative
-  left: 12px // magic number ( 2 * 6 )
-  @include media-query($break-medium)
+  z-index: 1000
+  @include media-query(865px)
     margin-top: 0
+
+@media only screen and (max-width : 768px)
+  .site-nav
+    text-align: right
+    float: none
+    margin: 20px 0
+
+@media only screen and (min-width : 768px) and (max-width : 865px)
+  .site-nav
+    text-align: center
+    float: none
+    margin: 20px 0
+
+@media only screen and (min-width : 865px)
+  .site-nav
+    clear: right
+    float: right
+    text-align: right
+    margin: 60px 0 10px 10px
+
 
 .site-logo
   display: none // block
@@ -97,34 +130,36 @@
   img
     border: none
 
+
+
 .site-branding
-  float: left
   color: #333
-  margin-top: 20px
-  margin-bottom: 20px
+
+@media only screen and (max-width : 840px)
+  .site-branding
+    float: none
+    padding-top: 10px
+    padding-bottom: 10px
+
+@media only screen and (min-width : 840px)
+  .site-branding
+    float: left
+    margin-top: 10px
+    margin-bottom: 10px
+
 
 
 .site-branding__text
-  font-family: 'Lobster'
-  text-transform: lowercase
-  line-height: 1
-  color: white
+  margin-left: auto
+  margin-right: auto
 
   display: block
-  width: 72px
-  height: 72px
+  width: 92px
+  height: 92px
   background-color: $fresh-blue
   @include fresh-borders(10px)
   box-shadow: 1px 1px 4px #CCC
 
-
-@media only screen and (max-width : 784px)
-  .site-branding__text
-    font-size: 30px      
-
-@media only screen and (min-width : 784px)
-  .site-branding__text
-    font-size: 50px
 
 
 
@@ -175,25 +210,12 @@
   font-weight: bold
   padding: 6px
 
-@media only screen and (min-width : $on-palm)
+@media only screen and (min-width : $break-medium)
   .page-link
-    // line-height: 20px
-    // background-color: $fresh-blue // #333
-    // color: white
-    // display: block
-    // text-transform: uppercase
-    // font-size: 12px
-    // float: left
-    // padding: 6px
     @include fresh-borders(8px)
-    // min-width: 50px  
     &:hover
       background-color: #DDD
   
-
-@media only screen and (max-width : $on-palm)
-  .page-link
-
 
 
 .site-header
@@ -308,8 +330,25 @@
 .show, .member
   float: left
   list-style-type: none
-  width: 320px
   margin-bottom: 20px
+  text-align: center
+  width: 100% // 320
+
+  @media only screen and (min-width: 480px) and (max-width : 680px)
+    width: 48.8%
+    margin-right: 2.4%
+    &:nth-child(2n)
+      margin-right: 0
+    &:nth-child(2n+1)
+      clear: left
+
+  @media only screen and (min-width : 680px)
+    width: 31.7%
+    margin-right: 2.4%
+    &:nth-child(3n)
+      margin-right: 0
+    &:nth-child(3n+1)
+      clear: left
 
 .member-link
   display: block
@@ -329,8 +368,9 @@
 
 .show__title
   @extend .secondary-heading
-  display: inline-block
   margin-bottom: 0
+  @media only screen and (min-width: 680px) 
+    display: inline-block
 
 
 .member__name
@@ -449,23 +489,6 @@
   left: 140px
 
 
-
-/****GRID***/
-
-.half
-  width: 48.8%
-  margin-right: 2.4%
-  &:nth-child(2n)
-    margin-right: 0
-  &:nth-child(2n+1)
-    clear: left
-.third
-  width: 31.7%
-  margin-right: 2.4%
-  &:nth-child(3n)
-    margin-right: 0
-  &:nth-child(3n+1)
-    clear: left
 
 
 
