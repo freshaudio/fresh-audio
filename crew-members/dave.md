@@ -4,7 +4,9 @@ title: Dave
 permalink: /crew/dave/
 ---
 
-# Dave
+# Dave Burn
+_Sound Recordist_
+
 Likes tea and biscuits
 
 ## Recent work:

@@ -4,7 +4,9 @@ title: Mike
 permalink: /crew/mike/
 ---
 
-# Mike
+# Mike McGinn
+_Sound Recordist_
+
 Loves ornithology and audio
 
 ## Recent work:

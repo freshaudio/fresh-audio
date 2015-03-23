@@ -9,12 +9,6 @@
       
     </aside>
 
-
-    <div class="site-contact">
-      <b>Bookings:</b> <a href="mailto:{{ site.mandy_email }}" class="site-contact__link">{{ site.mandy_email }}</a> <span class="site-contact__number">+44 (0)7984 189 135</span>
-    </div> 
-
-
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -25,21 +19,15 @@
       </a>
 
       <div class="trigger">
-<!--         {% for page in site.pages %}
-          {% if page.nav %}
-          <a class="page-link fresh-boxed" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %} -->
+
         <a class="page-link fresh-boxed" href="{{ site.url }}/">Home</a>
+        <a class="page-link fresh-boxed" href="{{ site.url }}/about">About</a>
         <a class="page-link fresh-boxed" href="{{ site.url }}/crew">Crew</a>
         <a class="page-link fresh-boxed" href="{{ site.url }}/shows">Shows</a>
         <a class="page-link fresh-boxed" href="{{ site.url }}/photos">Photos</a>
         <a class="page-link fresh-boxed" href="{{ site.url }}/north">North</a>
         <a class="page-link fresh-boxed" href="{{ site.url }}/contact">Contact</a>
         
-        
-
-
       </div>
     </nav>
 

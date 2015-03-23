@@ -4,7 +4,9 @@ title: Louis
 permalink: /crew/louis/
 ---
 
-# Louis
+# Louis Innis
+_Sound Recordist_
+
 The embodiment of a Fresh Audio Soundie
 
 ## Recent work:
