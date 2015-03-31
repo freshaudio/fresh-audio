@@ -29,6 +29,10 @@
   line-height: 1.272
   margin-bottom: 24px
 
+
+.graceful-hover
+  transition: 0.2s linear all
+
 /****GRID***/
 
 .half
@@ -215,6 +219,7 @@
 @media only screen and (min-width : $break-medium)
   .page-link
     @include fresh-borders(8px)
+    transition: 0.2s linear all
     &:hover
       background-color: #EEE
   
@@ -397,7 +402,7 @@
   margin-bottom: 20px
   padding: 10px 10px 30px
   float: left
-  
+  transition: 0.2s linear all
   img
     margin-bottom: 10px
   p
@@ -467,7 +472,7 @@
   @include fresh-borders(10px)
   margin-bottom: 10px
   border: solid 3px rgba(0,0,0,.1)
-
+  transition: 0.2s linear all
 
 .show__title
   @extend .secondary-heading
