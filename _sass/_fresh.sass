@@ -645,11 +645,56 @@
 //     color: white
 
 
-// .contact
-//   background: rgba(255,0,0,.1)
-//   float: left
 
-// .contact__name
-//   font-size: 14px
-//   font-weight: bold
-//   margin-bottom: 0
+.contact
+  background: rgba(255,255,255,.1)
+  @extend %clearfix
+
+.contact__lolz
+  background: rgba(255,255,255,.1)
+  float: left
+  @extend .third
+  position: relative
+  
+.contact__lolz__image
+  @include fresh-borders(10px)
+  margin-bottom: 10px
+  border: solid 3px rgba(0,0,0,.1)
+  transition: 0.2s linear all
+
+
+.contact__lolz__title
+  color: white
+  position: absolute
+  bottom: 10px
+  left: 10px
+  padding: 10px
+  background-color: rgba(0,0,0,0.5)
+  @include fresh-borders(10px)
+
+
+.contact__person
+  background: rgba(255,255,255,.1)
+  float: left
+  @extend .third
+
+.contact__map
+  background: rgba(255,255,255,.1)
+  float: left
+  @extend .third
+
+.contact__social-box
+  background: rgba(255,255,255,.3)
+  float: left
+  display: block
+  @extend .third
+
+.contact__social-box__twitter, .contact__social-box__facebook, .contact__social-box__instagram
+  display: block
+  color: white
+  width: 80px
+  height: 80px
+  background: $fresh-blue
+  margin: 20px auto
+  @include fresh-borders(10px)
+  text-align: center
