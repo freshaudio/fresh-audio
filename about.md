@@ -5,7 +5,7 @@ permalink: /about/
 nav: true
 ---
 
-# What's the story
+# What's the story...
 
 Fresh Audio supplies Location Sound Recordist and audio equipment for television and corporate video productions. We have offices based in both London and Manchester and an array of experience under our belt from high end multi camera reality formats to children's television
 
