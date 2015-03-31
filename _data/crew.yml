@@ -42,3 +42,8 @@
   first_name: Rick
   last_name: Entezari
   job: Sound Recordist
+
+- id: wes
+  first_name: Wes
+  last_name: Tastard
+  job: Sound Recordist
