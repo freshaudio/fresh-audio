@@ -26,7 +26,7 @@
 - id: louis
   first_name: Louis
   last_name: Innis
-  job: Sound Recordist
+  job: Junior Sound Recordist
 
 - id: steve
   first_name: Steve
@@ -41,4 +41,9 @@
 - id: rick
   first_name: Rick
   last_name: Entezari
+  job: Sound Recordist
+
+- id: wes
+  first_name: Wes
+  last_name: Tastard
   job: Sound Recordist

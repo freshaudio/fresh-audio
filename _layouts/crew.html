@@ -11,14 +11,14 @@
       <div class="wrapper">
      
         <header class="post-header">
-          <h1 class="post-title">{{ page.title }}</h1>
+          <h1 class="post-title">{{ page.title }}...</h1>
         </header>
          
 
         <ul class="members">
           {% for member in site.data.crew %}
 
-          <li class="member third">
+          <li class="member">
             <a href="{{ site.url }}/crew/{{member.id}}" class="member-link">
               <img class="member__image" src="{{ site.url }}/assets/crew/crew-{{member.id}}.jpg" />
               <h2 class="member__name">{{ member.first_name }} {{ member.last_name }}<span class="member__job">{{ member.job }}</span></h2>
