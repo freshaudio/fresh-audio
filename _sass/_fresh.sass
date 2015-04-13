@@ -655,69 +655,104 @@
 
 
 .contact
-  background: rgba(255,255,255,.1)
   @extend %clearfix
 
-.contact__lolz, .contact__person, .contact__map
-  background: rgba(255,255,255,.1)
-  float: left
+
+// .contact__lolz, .contact__person, .contact__map
+//   background: rgba(255,255,255,.1)
+//   float: left
+//   @extend .third
+//   position: relative
+
+// .contact__lolz__image, .contact__map__image, .contact__person__image
+//   @include fresh-borders(10px)
+//   margin-bottom: 10px
+//   border: solid 3px rgba(0,0,0,.1)
+//   transition: 0.2s linear all
+
+
+// .contact__lolz__title, .contact__person__text
+//   color: white
+//   padding: 10px
+//   background-color: rgba(0,0,0,0.6)
+//   @include fresh-borders(10px)
+
+// .contact__person__text
+//   margin-bottom: 10px
+//   a
+//     color: white
+
+// .contact__lolz__title, .contact__person__text
+//   position: absolute
+//   bottom: 10px
+//   left: 10px
+
+
+// .contact__social-box
+//   float: left
+//   display: block
+//   @extend .third
+
+// .contact__social-box__twitter, .contact__social-box__facebook, .contact__social-box__instagram
+//   display: block
+//   color: white
+//   width: 80px
+//   height: 80px
+//   background: $fresh-blue
+//   margin: 45px auto
+//   @include fresh-borders(10px)
+//   text-align: center
+//   line-height: 80px
+
+// .homepage-cols__social__links
+//   list-style-type: none
+
+// .homepage-cols__social__link
+//   @include fresh-borders(10px)
+//   background-color: white
+//   display: block
+//   margin-bottom: 20px
+//   padding: 10px 10px 10px 70px
+//   background-repeat: no-repeat 
+//   min-height: 68px
+
+// .homepage-cols__social__link--f
+
+// .homepage-cols__social__link--t
+
+// .homepage-cols__social__link--i
+
+.contact__map
   @extend .third
-  position: relative
-  
-.contact__lolz__image, .contact__map__image, .contact__person__image
+  margin-bottom: 20px
+  float: left
+
+.contact__map__image
   @include fresh-borders(10px)
-  margin-bottom: 10px
   border: solid 3px rgba(0,0,0,.1)
-  transition: 0.2s linear all
 
-
-.contact__lolz__title, .contact__person__text
-  color: white
-  padding: 10px
-  background-color: rgba(0,0,0,0.6)
-  @include fresh-borders(10px)
-
-.contact__person__text
-  margin-bottom: 10px
-  a
-    color: white
-
-.contact__lolz__title, .contact__person__text
-  position: absolute
-  bottom: 10px
-  left: 10px
-
-
-.contact__social-box
+.contact__content
+  // background-color: rgba(255,0,0,.1)
   float: left
-  display: block
-  @extend .third
+  width: 65.9%
 
-.contact__social-box__twitter, .contact__social-box__facebook, .contact__social-box__instagram
-  display: block
-  color: white
-  width: 80px
-  height: 80px
-  background: $fresh-blue
-  margin: 45px auto
-  @include fresh-borders(10px)
-  text-align: center
-  line-height: 80px
+.contact__content__title
+  // font-size: 16px
 
-.homepage-cols__social__links
-  list-style-type: none
-
-.homepage-cols__social__link
+.contact__content__option
   @include fresh-borders(10px)
   background-color: white
   display: block
+  padding: 15px
+  font-size: 20px
   margin-bottom: 20px
-  padding: 10px 10px 10px 70px
-  background-repeat: no-repeat 
-  min-height: 68px
 
-.homepage-cols__social__link--f
+.contact__content__option__prefix
+  margin-right: 10px
 
-.homepage-cols__social__link--t
+.contact__content__social
+  @extend %clearfix
 
-.homepage-cols__social__link--i
+.contact__content__option--social
+  @extend .third
+  float: left
