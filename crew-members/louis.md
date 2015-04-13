@@ -5,7 +5,7 @@ permalink: /crew/louis/
 ---
 
 # Louis Innis
-_Sound Recordist_
+_Junior Sound Recordist_
 
 The embodiment of a Fresh Audio Soundie
 
