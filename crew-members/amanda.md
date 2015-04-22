@@ -7,7 +7,7 @@ permalink: /crew/amanda/
 # Amanda Long
 _Bookings Manager_
 
-AKA Mand, absolutely loves Helvetica
+Absolutely loves Doris Day movies
 
 10 years experience in managing crew and production logistics both on and off the set.
 
