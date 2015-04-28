@@ -58,7 +58,7 @@
         }
     }
 
-    @include media-query($break-medium) {
+    @include media-query(875px) {
         position: absolute;
         top: 9px;
         right: 30px;
