@@ -65,3 +65,103 @@
 - id: show-17
   title: The Who Quadrophenia
   channel: BBC4
+
+- id: show-18
+  title: Take Me Out
+  channel: ITV
+
+- id: show-19
+  title: Who Wants To Be A Superhero 
+  channel: BBC1
+
+- id: show-20
+  title: Brian Pern Series 2 
+  channel: BBC
+
+- id: show-21
+  title: Glastonbury 
+  channel: BBC1 & BBC2
+
+- id: show-22
+  title: Gimme A Break 
+  channel: CBBC
+
+- id: show-23
+  title: Andrea Bocelli The Story Behind The Voice 
+  channel: BBC2
+
+- id: show-24
+  title: Dancing On Ice Series 7 & 8
+  channel: ITV
+
+- id: show-25
+  title: Beat The Boss
+  channel: CBBC
+
+- id: show-26
+  title: Heston's Fantastical Food
+  channel: C4
+
+- id: show-27
+  title: The Hairy Bikers
+  channel: BBC2
+
+- id: show-28
+  title: Blue Peter
+  channel: BBC1
+
+- id: show-29
+  title: Richard Dawkins Sex Death & The Meaning Of Life
+  channel: C4
+
+- id: show-30
+  title: Got To Dance
+  channel: Sky 1
+
+- id: show-31
+  title: Mary Poppins On Broadway
+  channel: Multi-platform broadcaster
+
+- id: show-32
+  title: Street Child World Cup 2014
+  channel: BBC
+
+- id: show-33
+  title: Storage Hunters
+  channel: Dave
+
+- id: show-34
+  title: Basil Brush Swap Shop
+  channel: BBC1
+
+- id: show-35
+  title: The Royal Wedding
+  channel: BBC1
+
+- id: show-36
+  title: Britains Next Top Model
+  channel: Sky Living
+
+- id: show-37
+  title: Lion Kind Behind The Scenes
+  channel: Multi-platform broadcaster
+
+- id: show-38
+  title: Queen Days Of Our Lives
+  channel: BBC2
+
+- id: show-39
+  title: Hotel GB
+  channel: C4
+
+- id: show-40
+  title: Imagine - Dame Shirley Bassey
+  channel: BBC2
+
+- id: show-41
+  title: The One Show
+  channel: BBC1
+
+- id: show-42
+  title: 40 - Your Home In Their Hands
+  channel: BBC1
