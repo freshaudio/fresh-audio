@@ -7,7 +7,7 @@ permalink: /crew/steve/
 # Steve Llewellyn
 _Sound Recordist_
 
-Loves jokes.
+Favourite sport: The Annual Pork Pie Eating Championships, Leicester
 
 ## Recent work:
 + Ant & Dec's Saturday Night Takeaway

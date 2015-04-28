@@ -7,13 +7,13 @@ permalink: /crew/jonny/
 # Jonny Horne
 _Sound Recordist_
 
-Your friendly neighbourhood sound recordist...
+Best childhood memory: Seeing the Chuckle Brothers at the Hexagon Theatre, Reading
 
 ## Recent work:
-+ Storage hunters
++ Storage Hunters
 + The One Show
 + Rogue Traders
-+ McBusted - Get over it
++ McBusted: Get Over It
 + Text Santa
 + The Big Reunion: On Tour
 + Tonight
