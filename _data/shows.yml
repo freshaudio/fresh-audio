@@ -163,5 +163,29 @@
   channel: BBC1
 
 - id: show-42
-  title: 40 - Your Home In Their Hands
+  title: Your Home In Their Hands
   channel: BBC1
+
+- id: show-43
+  title: Under Milk Wood
+  channel: BBC1
+
+- id: show-44
+  title: Bolero 30th Anniversary
+  channel: BBC
+
+- id: show-45
+  title: Laureus Awards
+  channel: 
+
+- id: show-46
+  title: Sport Relief VT's 2014 & 2015
+  channel: BBC1 & BBC2
+
+- id: show-47
+  title: The Jump Series 1
+  channel: 
+
+- id: show-48
+  title: Text Santa
+  channel: ITV
