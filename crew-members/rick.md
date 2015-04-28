@@ -7,18 +7,18 @@ permalink: /crew/rick/
 # Rick Entezari
 _Sound Recordist_
 
-Slick
+Loves hiking and collects lucky charms
 
 ## Recent work:
 + Brit Awards
-+ 6 Nations online
++ 6 Nations Online
 + Cinemaniacs
-+ Bbc learning zone
++ BBC Learning Zone
 + Eurovision at 60
-+ Hennessy documentary
-+ Take me out
-+ Rogue traders
-+ Feeling nuts
++ Hennessy Documentary
++ Take Me Out
++ Rogue Traders
++ Feeling Nuts
 + Storage Hunters
 
 

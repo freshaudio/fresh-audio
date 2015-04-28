@@ -1,6 +1,6 @@
 - id: show-1
-  title: The Big Reunion - Series 1 & 2
-  channel: ITV
+  title: Goldrush
+  channel: 
 
 - id: show-2
   title: Made In Chelsea
@@ -31,8 +31,8 @@
   channel: Sky Living
 
 - id: show-9
-  title: Goldrush
-  channel: 
+  title: The Big Reunion - Series 1 & 2
+  channel: ITV
 
 - id: show-10
   title: Horizon - The Stranger In My Mind

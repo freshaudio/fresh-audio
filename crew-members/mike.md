@@ -7,7 +7,7 @@ permalink: /crew/mike/
 # Mike McGinn
 _Sound Recordist_
 
-Loves ornithology and audio
+Will do anything for a slice of Beef Wellington
 
 ## Recent work:
 + Goldrush
@@ -18,7 +18,7 @@ Loves ornithology and audio
 + V Festival 2014
 + Undermilkwood
 + Got To Dance
-+ Coldplay The Making of Ghoststories with Fearne Cotton
++ Coldplay: The Making of Ghost Stories with Fearne Cotton
 + Jessie Ware - You and I (Forever) music promo
 
 To book Mike please call [07984 189 135](tel:+447984189135) or email [amanda@freshaudio.tv](mailto:amanda@freshaudio.tv)

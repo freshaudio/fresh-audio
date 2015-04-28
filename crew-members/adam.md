@@ -7,10 +7,10 @@ permalink: /crew/adam/
 # Adam Thomas
 _Sound Recordist_
 
-Likes to be tickled.. odd.
+Mad about underground hip-hop and collecting hip-hop vinyl.
 
 ## Recent work:
-+ Storage hunters
++ Storage Hunters
 + South Side Story
 + Undercover Boss
 + Got To Dance - Best of
