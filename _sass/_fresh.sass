@@ -299,9 +299,24 @@
 .homepage-cols
   @extend %clearfix
 
-  aside
-    @extend .third
+@media only screen and (min-width : $on-palm)
+  .homepage-col
+    background-color: red
     float: left
+
+    width: 31.7%
+    margin-right: 2.4%
+    &:nth-child(3n)
+      margin-right: 0
+    &:nth-child(3n+1)
+      clear: left
+
+
+
+
+@media only screen and (max-width : $on-palm)
+  .homepage-col
+    background-color: yellow
 
 
 
@@ -334,14 +349,14 @@
   @include fresh-borders(10px)
   padding: 10px 10%
   color: $fresh-blue
-  font-family: "Lobster"
+  font-family: "Lobster", sans-serif
   text-align: center
   margin-bottom: -30px
   h1
     font-size: 20px  
     position: relative
     margin-bottom: 0
-    @media only screen and (min-width : 680px)
+    @media only screen and (min-width : 540px)
       font-size: 28px
       background-color: white
       bottom: 30px
@@ -650,54 +665,9 @@
   @extend %clearfix
 
 
-// .contact__lolz, .contact__person, .contact__map
-//   background: rgba(255,255,255,.1)
-//   float: left
-//   @extend .third
-//   position: relative
-
-// .contact__lolz__image, .contact__map__image, .contact__person__image
-//   @include fresh-borders(10px)
-//   margin-bottom: 10px
-//   border: solid 3px rgba(0,0,0,.1)
-//   transition: 0.2s linear all
-
-
-// .contact__lolz__title, .contact__person__text
-//   color: white
-//   padding: 10px
-//   background-color: rgba(0,0,0,0.6)
-//   @include fresh-borders(10px)
-
-// .contact__person__text
-//   margin-bottom: 10px
-//   a
-//     color: white
-
-// .contact__lolz__title, .contact__person__text
-//   position: absolute
-//   bottom: 10px
-//   left: 10px
-
-
-// .contact__social-box
-//   float: left
-//   display: block
-//   @extend .third
-
-// .contact__social-box__twitter, .contact__social-box__facebook, .contact__social-box__instagram
-//   display: block
-//   color: white
-//   width: 80px
-//   height: 80px
-//   background: $fresh-blue
-//   margin: 45px auto
-//   @include fresh-borders(10px)
-//   text-align: center
-//   line-height: 80px
-
 .homepage-cols__social__links
   list-style-type: none
+  overflow: hidden
 
 .homepage-cols__social__link
   @include fresh-borders(10px)
@@ -707,6 +677,19 @@
   padding: 10px 10px 10px 70px
   background-repeat: no-repeat 
   min-height: 68px
+
+@media only screen and (max-width : $on-palm)
+  .homepage-cols__social__link
+    text-indent: -9999px
+    background-position: center
+    float: left
+    width: 31.7%
+    margin-right: 2.4%
+    &:nth-child(3n)
+      margin-right: 0
+    &:nth-child(3n+1)
+      clear: left
+
 
 .homepage-cols__social__link--f
 
