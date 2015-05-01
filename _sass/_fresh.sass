@@ -70,11 +70,12 @@
 .north
   background: top no-repeat url('../assets/media-city-dusk-summer.jpg')
   h1
-    // position: relative
-    // bottom: 100px
     letter-spacing: -1px
     line-height: 1
     padding: 0 0 240px
+    @include media-query($on-palm)
+      padding: 0 0 50px
+      text-indent: -999px
 
 .about
   background: top no-repeat url('../assets/bg-about.jpg')
