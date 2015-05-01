@@ -706,26 +706,24 @@
     &:nth-child(3n+1)
       clear: left
 
-
-.homepage-cols__social__link--f
-
-.homepage-cols__social__link--t
-
-.homepage-cols__social__link--i
-
 .contact__map
   @extend .third
   margin-bottom: 20px
   float: left
+  @include media-query($on-palm)
+    float: none
+    width: 100%
 
 .contact__map__image
   @include fresh-borders(10px)
   border: solid 3px rgba(0,0,0,.1)
 
 .contact__content
-  // background-color: rgba(255,0,0,.1)
   float: left
   width: 65.9%
+  @include media-query($on-palm)
+    width: 100%
+    float: none
 
 .contact__content__title
   // font-size: 16px
@@ -741,9 +739,14 @@
 .contact__content__option__prefix
   margin-right: 10px
 
+
 .contact__content__social
   @extend %clearfix
 
 .contact__content__option--social
   @extend .third
   float: left
+
+@include media-query(880px)
+  .contact__content__option--social__text
+    display: none
