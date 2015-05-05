@@ -166,17 +166,10 @@
   color: white
   a
     color: white
-  // margin-top: 20px
-  // font-family: 'Open Sans'
-  // background-color: $fresh-blue
-  // color: white
-  // padding: 4px
 
 @media only screen and (min-width : $on-palm)
   .site-contact
     float: right
-    a
-      // color: white
     b
       // display: none
       text-transform: uppercase
@@ -185,22 +178,15 @@
 @media only screen and (max-width : $on-palm)
   .site-contact
     clear: left
+    text-align: center
     padding-top: 5px
 
+  .footer-channels
+    text-align: center
 
 
 .site-contact__number
   margin-left: 10px
-
-
-
-// .site-contact__link
-//   color: white
-//   padding-right: 10px
-
-// @media only screen and (max-width : $on-palm)
-//   .site-contact__link
-//     display: none
 
 .page-link
   font-family: 'Open Sans', sans-serif
@@ -356,8 +342,9 @@
   h1
     font-size: 20px  
     position: relative
-    margin-bottom: 0
+    margin-bottom: 10px
     @media only screen and (min-width : 540px)
+      margin-bottom: 0
       font-size: 28px
       background-color: white
       bottom: 30px
@@ -662,8 +649,12 @@
 .icon-instagram
   background-image: url('../assets/icons/instagram.png')
 
-.footer-channels
-  float: left
+
+
+@media only screen and (min-width : $on-palm)
+  .footer-channels
+    float: left
+
 /***TEMP *///
 
 .footer-col-3
