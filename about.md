@@ -2,7 +2,6 @@
 layout: about
 title: About
 permalink: /about/
-nav: true
 ---
 
 # What's the story...
