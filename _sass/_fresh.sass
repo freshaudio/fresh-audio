@@ -104,6 +104,17 @@
 .site-nav
   z-index: 1000
 
+
+.bx-wrapper
+  @media only screen and (max-width : 640px)
+    background-image: url('../assets/carousel/13-400.jpg')
+    background-position: top center
+    background-size: cover
+    height: 200px
+    .bx-viewport
+      display: none
+
+
 @media only screen and (max-width : 875px)
   .site-nav
     text-align: right
@@ -118,8 +129,11 @@
     margin: 70px 0 10px 10px
 
 
+
+
+
+
 .site-logo
-  display: none // block
   border: solid 1px rgba(255,255,255,.2)
   @include fresh-borders(10px)
   float: left
@@ -171,7 +185,6 @@
   .site-contact
     float: right
     b
-      // display: none
       text-transform: uppercase
       margin-right: 10px
 
@@ -288,7 +301,6 @@
 
 @media only screen and (min-width : $on-palm)
   .homepage-col
-    background-color: red
     float: left
 
     width: 31.7%
@@ -300,10 +312,6 @@
 
 
 
-
-@media only screen and (max-width : $on-palm)
-  .homepage-col
-    background-color: yellow
 
 
 
@@ -322,6 +330,8 @@
 
 
 .homepage-cols__title
+  @media only screen and (max-width : 400px)
+    display: none
   background-color: $fresh-blue
   color: white
   padding: 4px 10px
@@ -332,7 +342,8 @@
   color: rgba(255,255,255,.4)
 
 .homepage-content__strapline
-  // background-color: white
+  @media only screen and (max-width : 400px)
+    display: none
   @include fresh-borders(10px)
   padding: 10px 10%
   color: $fresh-blue
@@ -400,7 +411,6 @@
 
 .polaroid
   background: white
-  // box-shadow: 1px 1px 4px #CCC
   box-shadow: 3px 3px 7px #CCC
   margin-bottom: 20px
   padding: 10px 10px 30px
@@ -409,7 +419,6 @@
   img
     margin-bottom: 10px
   p
-    // color: red
     font-size: 14px
   &:hover
     color: #000
