@@ -81,7 +81,8 @@
   background: top no-repeat url('../assets/bg-about.jpg')
   .post-header
     padding: 0 0 290px
-
+    @include media-query($on-palm)
+      padding: 0 0 100px
 .page-wallpaper
   // padding-top: 100px
   // position: relative
@@ -539,10 +540,26 @@
 .member-info__image
   display: block
   float: left
+  @media only screen and (max-width : 550px)
+    float: none
+    width: 100%
   img
     @include fresh-borders(10px)
     margin-bottom: 10px
     border: solid 10px rgba(0,0,0,.1)
+    @media only screen and (max-width : 550px)
+      margin-left: 25%
+      width: 50%
+
+@media only screen and (min-width : 550px)
+  .member-info__content, .member-info__image
+    width: 48.8%
+    margin-right: 2.4%
+    &:nth-child(2n)
+      margin-right: 0
+    &:nth-child(2n+1)
+      clear: left
+
 
 .member-info__back
   display: block
@@ -552,6 +569,13 @@
   h1
     @extend .primary-heading
     margin-bottom: 4px
+    @media only screen and (max-width : 550px)
+      text-align: center
+
+  h1 + p 
+    @media only screen and (max-width : 550px)
+      text-align: center
+
 
   h1 + p + p
     background-color: rgba(0,0,0,.1)
