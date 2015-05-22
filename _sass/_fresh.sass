@@ -70,17 +70,19 @@
 .north
   background: top no-repeat url('../assets/media-city-dusk-summer.jpg')
   h1
-    // position: relative
-    // bottom: 100px
     letter-spacing: -1px
     line-height: 1
     padding: 0 0 240px
+    @include media-query($on-palm)
+      padding: 0 0 50px
+      text-indent: -999px
 
 .about
   background: top no-repeat url('../assets/bg-about.jpg')
   .post-header
     padding: 0 0 290px
-
+    @include media-query($on-palm)
+      padding: 0 0 100px
 .page-wallpaper
   // padding-top: 100px
   // position: relative
@@ -102,22 +104,28 @@
 
 .site-nav
   z-index: 1000
-  @include media-query(865px)
-    margin-top: 0
 
-@media only screen and (max-width : 768px)
+
+.bx-wrapper
+  img
+    width: 100%
+    background-size: contain
+  @media only screen and (max-width : 640px)
+    background-image: url('../assets/carousel/13-400.jpg')
+    background-position: top center
+    background-size: cover
+    height: 200px
+    .bx-viewport
+      display: none
+
+
+@media only screen and (max-width : 875px)
   .site-nav
     text-align: right
     float: none
     margin: 20px 0
 
-@media only screen and (min-width : 768px) and (max-width : 865px)
-  .site-nav
-    text-align: center
-    float: none
-    margin: 20px 0
-
-@media only screen and (min-width : 865px)
+@media only screen and (min-width : 876px)
   .site-nav
     clear: right
     float: right
@@ -125,8 +133,11 @@
     margin: 70px 0 10px 10px
 
 
+
+
+
+
 .site-logo
-  display: none // block
   border: solid 1px rgba(255,255,255,.2)
   @include fresh-borders(10px)
   float: left
@@ -173,41 +184,26 @@
   color: white
   a
     color: white
-  // margin-top: 20px
-  // font-family: 'Open Sans'
-  // background-color: $fresh-blue
-  // color: white
-  // padding: 4px
 
 @media only screen and (min-width : $on-palm)
   .site-contact
     float: right
-    a
-      // color: white
     b
-      // display: none
       text-transform: uppercase
       margin-right: 10px
 
 @media only screen and (max-width : $on-palm)
   .site-contact
     clear: left
+    text-align: center
     padding-top: 5px
 
+  .footer-channels
+    text-align: center
 
 
 .site-contact__number
   margin-left: 10px
-
-
-
-// .site-contact__link
-//   color: white
-//   padding-right: 10px
-
-// @media only screen and (max-width : $on-palm)
-//   .site-contact__link
-//     display: none
 
 .page-link
   font-family: 'Open Sans', sans-serif
@@ -307,9 +303,19 @@
 .homepage-cols
   @extend %clearfix
 
-  aside
-    @extend .third
+@media only screen and (min-width : $on-palm)
+  .homepage-col
     float: left
+
+    width: 31.7%
+    margin-right: 2.4%
+    &:nth-child(3n)
+      margin-right: 0
+    &:nth-child(3n+1)
+      clear: left
+
+
+
 
 
 
@@ -328,6 +334,8 @@
 
 
 .homepage-cols__title
+  @media only screen and (max-width : 400px)
+    display: none
   background-color: $fresh-blue
   color: white
   padding: 4px 10px
@@ -338,18 +346,20 @@
   color: rgba(255,255,255,.4)
 
 .homepage-content__strapline
-  // background-color: white
+  @media only screen and (max-width : 400px)
+    display: none
   @include fresh-borders(10px)
   padding: 10px 10%
   color: $fresh-blue
-  font-family: "Lobster"
+  font-family: "Lobster", sans-serif
   text-align: center
   margin-bottom: -30px
   h1
     font-size: 20px  
     position: relative
-    margin-bottom: 0
-    @media only screen and (min-width : 680px)
+    margin-bottom: 10px
+    @media only screen and (min-width : 540px)
+      margin-bottom: 0
       font-size: 28px
       background-color: white
       bottom: 30px
@@ -405,7 +415,6 @@
 
 .polaroid
   background: white
-  // box-shadow: 1px 1px 4px #CCC
   box-shadow: 3px 3px 7px #CCC
   margin-bottom: 20px
   padding: 10px 10px 30px
@@ -414,14 +423,24 @@
   img
     margin-bottom: 10px
   p
-    // color: red
     font-size: 14px
   &:hover
     color: #000
     text-decoration: none
     p
       color: black
-
+  @media only screen and (min-width : $on-palm)
+    width: 31.7%
+    margin-right: 2.4%
+    &:nth-child(3n)
+      margin-right: 0
+    &:nth-child(3n+1)
+      clear: left
+  @media only screen and (max-width : $on-palm)
+    width: 80%
+    margin-left: 10%
+    img
+      width: 100%
 
 .polaroid
   transition: transform .15s linear
@@ -442,6 +461,10 @@
 
 .shows, .members, #instafeed
   @extend %clearfix
+
+
+.js-instafeed
+  padding: 20px 0
 
 .show, .member
   float: left
@@ -481,6 +504,9 @@
   margin-bottom: 10px
   border: solid 3px rgba(0,0,0,.1)
   transition: 0.2s linear all
+  @media only screen and (max-width : 480px)
+    width: 100%
+
 
 .show__title
   @extend .secondary-heading
@@ -515,10 +541,26 @@
 .member-info__image
   display: block
   float: left
+  @media only screen and (max-width : 550px)
+    float: none
+    width: 100%
   img
     @include fresh-borders(10px)
     margin-bottom: 10px
     border: solid 10px rgba(0,0,0,.1)
+    @media only screen and (max-width : 550px)
+      margin-left: 25%
+      width: 50%
+
+@media only screen and (min-width : 550px)
+  .member-info__content, .member-info__image
+    width: 48.8%
+    margin-right: 2.4%
+    &:nth-child(2n)
+      margin-right: 0
+    &:nth-child(2n+1)
+      clear: left
+
 
 .member-info__back
   display: block
@@ -528,6 +570,13 @@
   h1
     @extend .primary-heading
     margin-bottom: 4px
+    @media only screen and (max-width : 550px)
+      text-align: center
+
+  h1 + p
+    @media only screen and (max-width : 550px)
+      text-align: center
+
 
   h1 + p + p
     background-color: rgba(0,0,0,.1)
@@ -646,7 +695,6 @@
     text-align: center
 
 
-
 /***TEMP *///
 
 .footer-col-3
@@ -673,54 +721,9 @@
   @extend %clearfix
 
 
-// .contact__lolz, .contact__person, .contact__map
-//   background: rgba(255,255,255,.1)
-//   float: left
-//   @extend .third
-//   position: relative
-
-// .contact__lolz__image, .contact__map__image, .contact__person__image
-//   @include fresh-borders(10px)
-//   margin-bottom: 10px
-//   border: solid 3px rgba(0,0,0,.1)
-//   transition: 0.2s linear all
-
-
-// .contact__lolz__title, .contact__person__text
-//   color: white
-//   padding: 10px
-//   background-color: rgba(0,0,0,0.6)
-//   @include fresh-borders(10px)
-
-// .contact__person__text
-//   margin-bottom: 10px
-//   a
-//     color: white
-
-// .contact__lolz__title, .contact__person__text
-//   position: absolute
-//   bottom: 10px
-//   left: 10px
-
-
-// .contact__social-box
-//   float: left
-//   display: block
-//   @extend .third
-
-// .contact__social-box__twitter, .contact__social-box__facebook, .contact__social-box__instagram
-//   display: block
-//   color: white
-//   width: 80px
-//   height: 80px
-//   background: $fresh-blue
-//   margin: 45px auto
-//   @include fresh-borders(10px)
-//   text-align: center
-//   line-height: 80px
-
 .homepage-cols__social__links
   list-style-type: none
+  overflow: hidden
 
 .homepage-cols__social__link
   @include fresh-borders(10px)
@@ -731,25 +734,36 @@
   background-repeat: no-repeat 
   min-height: 68px
 
-.homepage-cols__social__link--f
-
-.homepage-cols__social__link--t
-
-.homepage-cols__social__link--i
+@media only screen and (max-width : $on-palm)
+  .homepage-cols__social__link
+    text-indent: -9999px
+    background-position: center
+    float: left
+    width: 31.7%
+    margin-right: 2.4%
+    &:nth-child(3n)
+      margin-right: 0
+    &:nth-child(3n+1)
+      clear: left
 
 .contact__map
   @extend .third
   margin-bottom: 20px
   float: left
+  @include media-query($on-palm)
+    float: none
+    width: 100%
 
 .contact__map__image
   @include fresh-borders(10px)
   border: solid 3px rgba(0,0,0,.1)
 
 .contact__content
-  // background-color: rgba(255,0,0,.1)
   float: left
   width: 65.9%
+  @include media-query($on-palm)
+    width: 100%
+    float: none
 
 .contact__content__title
   // font-size: 16px
@@ -765,9 +779,14 @@
 .contact__content__option__prefix
   margin-right: 10px
 
+
 .contact__content__social
   @extend %clearfix
 
 .contact__content__option--social
   @extend .third
   float: left
+
+@include media-query(880px)
+  .contact__content__option--social__text
+    display: none

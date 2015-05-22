@@ -2,7 +2,6 @@
 layout: north
 title: North
 permalink: /north/
-nav: true
 ---
 
 ## Location Sound Recordists… up north

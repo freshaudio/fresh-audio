@@ -44,35 +44,28 @@
       <div class="wrapper">
         <div class="homepage-content">
 
-          
-
           <div class="homepage-cols">
-            <aside class="homepage-cols__content">
+            <aside class="homepage-col homepage-cols__content">
               <h2 class="homepage-cols__title">Fresh Story</h2>
               {{ content }}
-
             </aside>
-            <aside class="homepage-cols__tweets">
-              <h2 class="homepage-cols__title">Fresh Tweets <!--a class="homepage-cols__title-twitter" href="http://twitter.com/freshaudiotv">@freshaudiotv</a--></h2>
-              
+
+            <aside class="homepage-col homepage-cols__tweets">
+              <h2 class="homepage-cols__title">Fresh Tweets</h2>
               <div id="js-homepage-cols__tweets"></div>
             </aside>
-            <aside class="homepage-cols__social">
-                <h2 class="homepage-cols__title">Fresh Social</h2>
-                <ul class="homepage-cols__social__links">
-                    <a target="_blank" href="//www.facebook.com/pages/Fresh-Audio/801657079882492" class="homepage-cols__social__link homepage-cols__social__link--f icon-facebook"><h3>Facebook</h3><!-- <a href="//www.facebook.com/pages/Fresh-Audio/801657079882492">f</a> --></li>
-                    <a target="_blank" href="//twitter.com/freshaudiotv" class="homepage-cols__social__link homepage-cols__social__link--t icon-twitter"><h3>Twitter</h3><!-- <a href="//twitter.com/freshaudiotv">t</a> --></a>
-                    <a target="_blank" href="//instagram.com/freshaudio.tv" class="homepage-cols__social__link homepage-cols__social__link--i icon-instagram"><h3>Instagram</h3><!-- <a href="//instagram.com/freshaudio.tv">i</a> --></a>
-                </ul> 
+
+            <aside class="homepage-col homepage-cols__social">
+              <h2 class="homepage-cols__title">Fresh Social</h2>
+              <div class="homepage-cols__social__links">
+                <a target="_blank" href="//www.facebook.com/pages/Fresh-Audio/801657079882492" class="homepage-cols__social__link homepage-cols__social__link--f icon-facebook"><h3>Facebook</h3>
+                <a target="_blank" href="//twitter.com/freshaudiotv" class="homepage-cols__social__link homepage-cols__social__link--t icon-twitter"><h3>Twitter</h3></a>
+                <a target="_blank" href="//instagram.com/freshaudio.tv" class="homepage-cols__social__link homepage-cols__social__link--i icon-instagram"><h3>Instagram</h3></a>
+              </div>
             </aside>
           </div>
 
         </div>
-        <div>
-
-
-
-</div>
 
       </div>
         
@@ -83,17 +76,12 @@
     {% include footer.html %}
     
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-
-
     <script type="text/javascript" src="{{ site.url }}/assets/jquery.bxslider.min.js"></script>
-
-
     <script type="text/javascript" src="{{ site.url }}/assets/twitter-post-fetcher.js"></script>
 
     <script>
 
       $(function(){
-        console.log("in");
 
          $('.bxslider').bxSlider({
           auto: true,
