@@ -7,7 +7,7 @@ permalink: /crew/rick/
 # Rick Entezari
 _Sound Recordist_
 
-Loves hiking and collects lucky charms
+All time favourite album: The White Album - The Beatles
 
 ## Recent work:
 + Brit Awards

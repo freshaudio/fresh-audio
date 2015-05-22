@@ -7,7 +7,7 @@ permalink: /crew/louis/
 # Louis Innis
 _Junior Sound Recordist_
 
-Addicted to watching Animal Planets River Monsters
+All time favourite album: Legend - Bob Marley and the Wailers
 
 ## Recent work:
 + What's Up

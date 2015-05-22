@@ -7,7 +7,7 @@ permalink: /crew/mike/
 # Mike McGinn
 _Sound Recordist_
 
-Will do anything for a slice of Beef Wellington
+All time favourite album: Original Pirate Material - The Streets
 
 ## Recent work:
 + Goldrush

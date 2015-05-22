@@ -7,7 +7,7 @@ permalink: /crew/dave/
 # Dave Burn
 _Sound Recordist_
 
-Loves Nirvana, hates vampires
+All time favourite album: Nevermind - Nirvana
 
 ## Recent work:
 + Come Dine With Me

@@ -7,6 +7,7 @@ permalink: /crew/wes/
 # Wes Tastard
 _Sound Recordist_
 
+All time favourite album: Good News For People Who Love Bad News - Modest Mouse
 
 ## Recent work:
 + Walkers: Smile Campaign

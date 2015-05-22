@@ -7,7 +7,7 @@ permalink: /crew/jonny/
 # Jonny Horne
 _Sound Recordist_
 
-Best childhood memory: Seeing the Chuckle Brothers at the Hexagon Theatre, Reading
+All time favourite album: Nico - The Velvet Underground
 
 ## Recent work:
 + Storage Hunters
