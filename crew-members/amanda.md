@@ -7,7 +7,7 @@ permalink: /crew/amanda/
 # Amanda Long
 _Bookings Manager_
 
-Absolutely loves Doris Day movies
+All time favourite album: Nevermind - Nirvana
 
 10 years experience in managing crew and production logistics both on and off the set.
 

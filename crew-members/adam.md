@@ -7,7 +7,7 @@ permalink: /crew/adam/
 # Adam Thomas
 _Sound Recordist_
 
-Mad about underground hip-hop and collecting hip-hop vinyl.
+All time favourite album: O.S.T. - People Under the Stairs
 
 ## Recent work:
 + Storage Hunters

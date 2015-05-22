@@ -7,7 +7,7 @@ permalink: /crew/ryan/
 # Ryan Patton
 _Managing Director/Sound Recordist_
 
-Best read ever: The Tale of Peter Rabbit by Beatrix Potter.
+All time favourite album: Doggystyle - Snoop Dogg
 
 ## Recent work:
 + Songs Of the South
