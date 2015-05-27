@@ -1,6 +1,6 @@
-- id: show-1
-  title: Goldrush
-  channel: 
+- id: show-21
+  title: Glastonbury
+  channel: BBC1 & BBC2
 
 - id: show-2
   title: Made In Chelsea
@@ -74,9 +74,9 @@
   title: Brian Pern Series 2 
   channel: BBC
 
-- id: show-21
-  title: Glastonbury 
-  channel: BBC1 & BBC2
+- id: show-1
+  title: Goldrush
+  channel:
 
 - id: show-22
   title: Gimme A Break 
