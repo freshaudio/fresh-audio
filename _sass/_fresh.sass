@@ -127,9 +127,9 @@
   img
     width: 100%
     background-size: contain
-  @media only screen and (max-width : 500px)
-    .bx-viewport
-      display: none
+  // @media only screen and (max-width : 500px)
+  //   .bx-viewport
+  //     display: none
 
 
 @media only screen and (max-width : 875px)
@@ -368,24 +368,18 @@
   font-family: "Lobster", sans-serif
   text-align: center
   background-color: white
-  margin-bottom: -20px
   position: relative
-  bottom: 20px
+  @media only screen and (min-width : 400px)
+    margin-bottom: -20px
+    bottom: 20px
   h1
     width: 90%
     margin-left: 5%
     margin-right: 5%
     margin-bottom: 0
     padding: 10px 10%
-  @media only screen and (max-width : 400px)
-    .mob-hack
-      margin-bottom: 10px
-    h1
-      display: none
   @media only screen and (max-width : 500px)
     bottom: 0
-    .mob-hack
-      display: block !important
     h1
       width: 100%
       margin: 0
