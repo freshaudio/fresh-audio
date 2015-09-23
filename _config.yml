@@ -10,8 +10,10 @@ description: > # this means to ignore newlines until "baseurl:"
   match your productions specific needs.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://freshaudio.tv" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: freshaudio
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-sitemap
