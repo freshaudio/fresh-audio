@@ -38,12 +38,22 @@
   last_name: Horne
   job: Sound Recordist
 
-- id: rick
-  first_name: Rick
-  last_name: Entezari
+- id: rob
+  first_name: Rob
+  last_name: Thomas
+  job: Sound Recordist
+
+- id: andy
+  first_name: Andy
+  last_name: Cahill
   job: Sound Recordist
 
 - id: wes
   first_name: Wes
   last_name: Tastard
+  job: Sound Recordist
+
+- id: rick
+  first_name: Rick
+  last_name: Entezari
   job: Sound Recordist
