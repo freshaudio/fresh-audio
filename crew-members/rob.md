@@ -10,15 +10,15 @@ _Sound Recordist_
 All time favourite album: Preemptive Strike, DJ Shadow
 
 ## Recent work:
-+ Grand Designs Special: Britain's Best Homes
-+ McCoy’s Commercial: Power Ballad
-+ Eat Well For Less: Series 2
-+ Royal Academy Summer Exhibition: BBC Arts
-+ You and Who’s Army: Alex Polizzi
-+ Charlie Brookers Election Wipe
-+ The Mirror Commercial: Don’t say Stupid campaign
-+ Jamie and Jimmys Friday Night Feast series 2
-+ The Culture Show: Tents - The Beginning of Architecture
-+ Lang Lang Mastering the Piano - Faber Music
++ Puma Redbull F1 Partnership 'Stampede' Commercial
++ Baftas: Laura Whitmore Interviews & Actors and Filmmakers on the red carpet
++ First Dates Commercial
++ Friday Night Feast 
++ Grand Designs: House of the Year
++ McCoy’s ‘Go Bold’ Commercial
++ Royal Academy Summer exhibition
++ Alex Polizzi: Hire Our Heroes
++ Facebook Aquila Documentary 
++ Eat Well for Less
 
 To book Rob please call [07984 189 135](tel:+447984189135) or email [amanda@freshaudio.tv](mailto:amanda@freshaudio.tv)
