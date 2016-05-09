@@ -7,19 +7,18 @@ permalink: /crew/rick/
 # Rick Entezari
 _Sound Recordist_
 
-All time favourite album: The White Album - The Beatles
+All time favourite album: Teenage Fanclub - Bandwagonesque
 
 ## Recent work:
++ Made in Chelsea 
++ Stage School
++ Lookalikes
++ GP's Behind Closed Doors
++ Date My Mum
++ Tour Group
++ One Show
++ Blue Peter
 + Brit Awards
-+ 6 Nations Online
-+ Cinemaniacs
-+ BBC Learning Zone
-+ Eurovision at 60
-+ Hennessy Documentary
-+ Take Me Out
-+ Rogue Traders
-+ Feeling Nuts
-+ Storage Hunters
-
++ Big Star's Little Star
 
 To book Rick please call [07984 189 135](tel:+447984189135) or email [amanda@freshaudio.tv](mailto:amanda@freshaudio.tv)

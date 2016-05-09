@@ -7,18 +7,18 @@ permalink: /crew/mike/
 # Mike McGinn
 _Sound Recordist_
 
-All time favourite album: Original Pirate Material - The Streets
+All time favourite album: Kendrick Lamar - To Pimp A Butterfly
 
 ## Recent work:
-+ Goldrush
++ Goldrush 
++ Ford Vignale Brand Ambassadors Commercials
 + Game of Thrones Greatest Moments
-+ Fear Factory
++ The Voice Finalist VT's
 + The Only Way Is Essex
 + Come Dine With Me
-+ V Festival 2014
-+ Undermilkwood
-+ Got To Dance
++ Bertolli With Butter Commercial
++ Rich Kids Of Beverly Hills
 + Coldplay: The Making of Ghost Stories with Fearne Cotton
-+ Jessie Ware - You and I (Forever) music promo
++ The One Show
 
 To book Mike please call [07984 189 135](tel:+447984189135) or email [amanda@freshaudio.tv](mailto:amanda@freshaudio.tv)
