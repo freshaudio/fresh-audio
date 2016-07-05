@@ -6,7 +6,7 @@ $(function(){
       // clientId: '783b41c8a8764ddd8926793e79726e61'
       get: 'user',
       userId: 1571068740,
-      accessToken: '1571068740.467ede5.729fb93c3ba54df5b9e3dff7e373e3dc',
+      accessToken: '1571068740.783b41c.16eb2d00acc34c8f946ac5be2bb492af',
       template: '<a target="_blank" href="{{link}}" class="polaroid"><img src="{{image}}"><p>{{caption}}</p></a>',
       resolution: 'low_resolution'
       // before: beforeFunc, 
@@ -14,6 +14,8 @@ $(function(){
 
   });
   feed.run();
+
+
 
   // function afterFunc(model){
   //   console.log(model || "after func");
