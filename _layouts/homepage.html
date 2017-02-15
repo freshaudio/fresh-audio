@@ -1,98 +1,120 @@
 <!DOCTYPE html>
+
 <html class="no-js">
-
   {% include head.html %}
-
+  
   <body>
-
     {% include header.html %}
 
     <div class="page-content homepage">
-        
-      <div class="wrapper">
 
-        <!-- 
+      <!-- 1, 2, 13, 3, 4, 7, 8, 9, 10, 11 -->
 
-        <header class="post-header">
-          <h1 class="post-title homepage-title">Providing <b>Location Sound Recordists</b> to the <b>TV</b> and <b>digital industries</b></h1>
-        </header>
-
-         -->
-
+      <!-- Slider main container -->
+      <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <!-- Required swiper-lazy class and image source specified in data-src attribute -->
+                <img data-src="{{ site.url }}/assets/carousel/1-400.jpg" class="swiper-lazy">
+                <!-- Preloader image -->
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img data-src="{{ site.url }}/assets/carousel/2-400.jpg" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img data-src="{{ site.url }}/assets/carousel/13-400.jpg" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img data-src="{{ site.url }}/assets/carousel/3-400.jpg" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+              <div class="swiper-slide">
+                <img data-src="{{ site.url }}/assets/carousel/4-400.jpg" class="swiper-lazy">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+              </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          
+          <!-- If we need navigation buttons -->
+<!--           <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div> -->
+          
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
       </div>
 
-      <ul class="bxslider">
-        <li><img src="{{site.url}}/assets/carousel/1-400.jpg" /></li>
-        <li><img src="{{site.url}}/assets/carousel/2-400.jpg" /></li>
-        <li><img src="{{site.url}}/assets/carousel/13-400.jpg" /></li>
-        <li><img src="{{site.url}}/assets/carousel/3-400.jpg" /></li>
-        <li><img src="{{site.url}}/assets/carousel/4-400.jpg" /></li>
-        <!-- <li><img src="{{site.url}}/assets/carousel/5-400.jpg" /></li> -->
-        <!-- <li><img src="{{site.url}}/assets/carousel/6-400.jpg" /></li> -->
-        <li><img src="{{site.url}}/assets/carousel/7-400.jpg" /></li>
-        <li><img src="{{site.url}}/assets/carousel/8-400.jpg" /></li>
-        <li><img src="{{site.url}}/assets/carousel/9-400.jpg" /></li>
-        <li><img src="{{site.url}}/assets/carousel/10-400.jpg" /></li>
-        <li><img src="{{site.url}}/assets/carousel/11-400.jpg" /></li>
-        <!-- <li><img src="{{site.url}}/assets/carousel/12-400.jpg" /></li> -->
-      </ul>
 
-          <div class="homepage-content__strapline">
-            <h1>Providing <b>Location Sound Recordists</b> to the <b>TV</b> and <b>digital industries</b>
-          </div>
+
+      <div class="homepage-content__strapline">
+        <h1>Providing <b>Location Sound Recordists</b> to the <b>TV</b> and <b>digital industries</b></h1>
+      </div>
 
       <div class="wrapper">
         <div class="homepage-content">
 
           <div class="homepage-cols">
-            <aside class="homepage-col homepage-cols__content">
+
+            <div class="homepage-col homepage-cols__content">
               <h2 class="homepage-cols__title">Fresh Story</h2>
               {{ content }}
-            </aside>
+            </div>
 
-            <aside class="homepage-col homepage-cols__tweets">
+            <div class="homepage-col homepage-cols__tweets">
               <h2 class="homepage-cols__title">Fresh Tweets</h2>
               <div id="js-homepage-cols__tweets"></div>
-            </aside>
+            </div>
 
-            <aside class="homepage-col homepage-cols__social">
+            <div class="homepage-col homepage-cols__social">
               <h2 class="homepage-cols__title">Fresh Social</h2>
               <div class="homepage-cols__social__links">
-                <a target="_blank" href="//www.facebook.com/pages/Fresh-Audio/801657079882492" class="homepage-cols__social__link homepage-cols__social__link--f icon-facebook"><h3>Facebook</h3>
+                <a target="_blank" href="//www.facebook.com/pages/Fresh-Audio/801657079882492" class="homepage-cols__social__link homepage-cols__social__link--f icon-facebook"><h3>Facebook</h3></a>
                 <a target="_blank" href="//twitter.com/freshaudiotv" class="homepage-cols__social__link homepage-cols__social__link--t icon-twitter"><h3>Twitter</h3></a>
                 <a target="_blank" href="//instagram.com/freshaudio.tv" class="homepage-cols__social__link homepage-cols__social__link--i icon-instagram"><h3>Instagram</h3></a>
               </div>
-            </aside>
+            </div>
           </div>
-
         </div>
-
       </div>
-        
-
-
     </div>
+
+    <style>
+    .swiper-container {
+        width: 100%;
+        height: auto;
+    }
+    </style>
 
     {% include footer.html %}
     
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="{{ site.url }}/assets/jquery.bxslider.min.js"></script>
-    <script type="text/javascript" src="{{ site.url }}/assets/twitter-post-fetcher.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.jquery.min.js"></script> -->
+    <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
 
+
+    <script src="{{ site.url }}/assets/twitter-post-fetcher.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
     <script>
-
-      $(function(){
-
-         $('.bxslider').bxSlider({
-          auto: true,
-          contols: false,
-          pager: false
-         });
-
-      });
-
+    var swiper = new Swiper('.swiper-container', {
+        // nextButton: '.swiper-button-next',
+        // prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        // Disable preloading of all images
+        preloadImages: false,
+        // Enable lazy loading
+        lazyLoading: true,
+        lazyLoadingOnTransitionStart: true
+    });
     </script>
 
   </body>
-
 </html>

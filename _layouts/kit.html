@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+     
+        <header class="post-header">
+          <h1 class="post-title">{{ page.title }}...</h1>
+        </header>
+         
+
+        <ul class="members">
+          {% for kit in site.data.kit %}
+
+          <li class="liiii">
+            
+              {{ kit.title }}
+              {{ kit.description }}
+              {{ kit.price }}
+              {{ kit.image_file_name }}
+
+          </li>
+
+          {% endfor %}
+        </ul>
+
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
+
+
