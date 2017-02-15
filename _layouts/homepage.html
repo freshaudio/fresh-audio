@@ -15,31 +15,17 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
-                <!-- Required swiper-lazy class and image source specified in data-src attribute -->
-                <img data-src="{{ site.url }}/assets/carousel/1-400.jpg" class="swiper-lazy">
-                <!-- Preloader image -->
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-              </div>
-              <div class="swiper-slide">
-                <img data-src="{{ site.url }}/assets/carousel/2-400.jpg" class="swiper-lazy">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-              </div>
-              <div class="swiper-slide">
-                <img data-src="{{ site.url }}/assets/carousel/13-400.jpg" class="swiper-lazy">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-              </div>
-              <div class="swiper-slide">
-                <img data-src="{{ site.url }}/assets/carousel/3-400.jpg" class="swiper-lazy">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-              </div>
-              <div class="swiper-slide">
-                <img data-src="{{ site.url }}/assets/carousel/4-400.jpg" class="swiper-lazy">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-              </div>
+              
+              {% for slider in site.data.slider %}
+                <div class="swiper-slide">
+                  <img data-src="{{ site.url }}/assets/carousel/{{slider.image_file_name}}.jpg" class="swiper-lazy">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                </div>
+              {% endfor %}
+
           </div>
           <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+          <!-- <div class="swiper-pagination"></div> -->
           
           <!-- If we need navigation buttons -->
 <!--           <div class="swiper-button-prev"></div>
@@ -103,8 +89,8 @@
     var swiper = new Swiper('.swiper-container', {
         // nextButton: '.swiper-button-next',
         // prevButton: '.swiper-button-prev',
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
+        // pagination: '.swiper-pagination',
+        // paginationClickable: true,
         centeredSlides: true,
         autoplay: 2500,
         autoplayDisableOnInteraction: false,
