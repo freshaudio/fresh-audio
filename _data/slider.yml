@@ -1,19 +1,55 @@
-- show_name: David Beckham
-  image_file_name: 1-400
+- title: David Beckham - For The Love Of The Game
+  broadcaster: BBC
+  image_file_name: slider-beckham
 
-- show_name: The Only Way Is Essex
-  image_file_name: 2-400
+- title: The Only Way Is Essex
+  broadcaster: Channel 4
+  image_file_name: slider-towie
 
-- show_name: Fresh Crew
+- title:
+  broadcaster: 
   image_file_name: 13-400
 
-# - show_name: Love Island
-#   image_file_name: slider-loveIsland
+- title: Love Island
+  broadcaster: ITV
+  image_file_name: slider-loveIsland
 
-# - show_name: First Dates Hotel
-#   image_file_name: slider-firstDatesHotel
+- title: Saturday Night Takeaway
+  broadcaster: ITV
+  image_file_name: slider-saturdayNightTakeaway
 
-# - show_name: Saturday Night Takeaway
-#   image_file_name: slider-saturdayNightTakeaway
+- title: Glastonbury
+  broadcaster: BBC
+  image_file_name: slider-glasto
 
+- title: Celeb's Go Dating
+  broadcaster: Channel 4
+  image_file_name: slider-celebsGoDating
 
+- title: Gold Rush
+  broadcaster: Discovery
+  image_file_name: slider-goldRush
+
+- title: Eden
+  broadcaster: Channel 4
+  image_file_name: slider-eden
+
+- title: First Dates
+  broadcaster: Channel 4
+  image_file_name: slider-firstDates
+
+- title: Beats One
+  broadcaster: Radio 1
+  image_file_name: slider-zaneRadio
+
+- title: Eden
+  broadcaster: Channel 4
+  image_file_name: slider-eden
+
+- title: Tribal Teens - Here Comes Trouble
+  broadcaster: Channel 5
+  image_file_name: slider-tribalTeens
+
+- title: Coast v Country
+  broadcaster: Channel 4
+  image_file_name: slider-coastCountry

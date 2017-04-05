@@ -15,10 +15,14 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
               <!-- Slides -->
-              
+
               {% for slider in site.data.slider %}
                 <div class="swiper-slide">
                   <img data-src="{{ site.url }}/assets/carousel/{{slider.image_file_name}}.jpg" class="swiper-lazy">
+                  <div class="swiper-slide__content">
+                    <p class="swiper-slide__content__title">{{slider.title}}</p>
+                    <p class="swiper-slide__content__broadcaster">{{slider.broadcaster}}</p>
+                  </div>
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                 </div>
               {% endfor %}
@@ -93,6 +97,8 @@
         // paginationClickable: true,
         centeredSlides: true,
         autoplay: 2500,
+        speed: 700,
+        effect: 'slide', // slide , fade
         autoplayDisableOnInteraction: false,
         // Disable preloading of all images
         preloadImages: false,
