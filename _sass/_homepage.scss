@@ -1,0 +1,36 @@
+.swiper-slide {
+  position: relative;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute; top: 0; bottom: 0; right: 0; left: 0;
+
+    &__title {
+      color: white;
+      font-family: 'Lobster', sans-serif;
+      padding: .4em;
+      margin: 0;
+      display: inline-block;
+      font-size: 2em;
+      line-height: 1em;
+      text-align: center;
+      @media (min-width: 850px) {
+        font-size: 3.2em;
+      }
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-transform: lowercase;
+
+    }
+
+    &__broadcaster {
+      color: white;
+      padding: 1em;
+      background-color: rgba(0,0,0,0.2);
+      display: inline-block;
+      @include fresh-borders(10px);
+    }
+  }
+}

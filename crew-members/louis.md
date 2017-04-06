@@ -10,15 +10,15 @@ _Sound Recordist_
 All time favourite album: Legend - Bob Marley and the Wailers
 
 ## Recent work:
-+ Power of Polo 
-+ Swim Challenge 2015 
-+ Storage Hunters 
-+ The Only Way Is Essex 
-+ You And Whose Army
-+ Get Well Soon  
-+ England Rugby World Cup entry/exit
-+ Absolute Genius with Dick and Dom 
-+ The One Show 
-+ Sex Box 
++ Storage hunters - Series 3, 4 and 5
++ Celebrity Storage Hunters
++ Sex box - Sound Recordist
++ Don’t Tell The Bride
++ Teen Mum UK
++ Walks With My Dog
++ Iceland commercial
++ Celebs Go Dating
++ Troy - The High Wire
++ Second Chance Summer
 
 To book Louis please call [07984 189 135](tel:+447984189135) or email [amanda@freshaudio.tv](mailto:amanda@freshaudio.tv)
