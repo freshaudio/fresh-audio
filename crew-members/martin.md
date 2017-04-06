@@ -11,14 +11,14 @@ All time favourite album: Jamie T – Panic Prevention
 
 ## Recent work:
 + A Place In The Sun
-+ Zeo Drinks Company - Commercial
++ Coast Vs Country
 + Wimbledon Tennis Championship
 + OBS – London 2012 Olympics
 + Strictly Come Dancing
-+ BBC Scotland
-+ ESPN Spain
++ The Only Way is Essex
++ Made In Chelsea
 + Williams F1 Interview
-+ LE WEB  - Amp Visual TV
-+ RSC – Cinna live stream
++ Too Much TV – Sports Relief - BBC
++ Martin Lewis Money Road Show
 
 To book Martin please call [07984 189 135](tel:+447984189135) or email [amanda@freshaudio.tv](mailto:amanda@freshaudio.tv)
