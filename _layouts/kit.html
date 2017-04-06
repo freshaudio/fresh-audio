@@ -9,34 +9,27 @@
 
     <div class="page-content">
       <div class="wrapper">
-     
+
         <header class="post-header">
           <h1 class="post-title">{{ page.title }}...</h1>
         </header>
-         
 
-        <ul class="members">
+        <ul class="kit">
           {% for kit in site.data.kit %}
-
-          <li class="liiii">
-            
-              {{ kit.title }}
-              {{ kit.description }}
-              {{ kit.price }}
-              {{ kit.image_file_name }}
-
+          <li class="kit__item">
+            <img src="/assets/kit/{{ kit.image_file_name }}.jpg" />
+            <div class="kit__item__content">
+              <h2 class="kit__item__content__title">{{ kit.title }}</h2>
+              <p>{{ kit.description }}</p>
+              <p class="kit__item__content__price"><strong>{{ kit.price }}</strong></p>
+            </div>
           </li>
-
           {% endfor %}
         </ul>
-
       </div>
     </div>
 
     {% include footer.html %}
 
   </body>
-
 </html>
-
-

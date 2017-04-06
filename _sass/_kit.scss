@@ -1,0 +1,53 @@
+.kit {
+  &__item {
+    background-color: white;
+    @include fresh-borders(10px);
+    margin-bottom: 10px;
+    border: solid 3px rgba(0,0,0,.1);
+    transition: 0.2s linear all;
+    padding: 10px;
+  }
+}
+
+.kit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  &__item {
+    border: solid 3px rgba(0,0,0,.1);
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: 480px) and (max-width : 680px) {
+      flex-basis: 48.8%;
+    }
+    @media only screen and (min-width : 680px) {
+      flex-basis: 31.7%;
+    }
+
+    &__content {
+      display: flex;
+      flex: 1;
+      margin-top: 1rem;
+      flex-direction: column;
+      position: relative;
+      padding-bottom: 2rem;
+      &__title {
+        font-family: "Lobster", serif;
+        text-transform: lowercase;
+        color: $fresh-blue;
+      }
+      &__price {
+        position: absolute;
+        bottom: 0;
+        font-weight: bold;
+        align-self: flex-end;
+        margin: 0;
+      }
+    }
+  }
+}

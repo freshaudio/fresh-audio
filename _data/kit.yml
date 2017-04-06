@@ -1,0 +1,159 @@
+- title: Standard Kit Package
+  description: "Standard kit comes with the following in orca bag - Mixer, Dual Receiver, x2 Transmitter and cos11, 3x NP1 with charger, Shotgun microphone with Boom Pole"
+  price: £100 per day
+  image_file_name: standard
+
+- title: Sound Devices 688
+  description: "Option of adding on SL-6 and CL-6. Portable audio 12 channel mixer"
+  price: £60 per day
+  image_file_name: 688
+
+- title: Sound Devices 664
+  description: "Production field 6 channel mixer with 12 inputs"
+  price: £50 per day
+  image_file_name: 664
+
+- title: Sound Devices 633
+  description: "Compact six input Mixer"
+  price: £40 per day
+  image_file_name: 633
+
+- title: Sennheiser MKH 416
+  description: "(Rycote windshield with windjammer included) - Directional Shotgun Microphone"
+  price: £40 per day
+  image_file_name: 416
+
+- title: Sennheiser MKH 50 – P48
+  description: "(Rycote windshield with windjammer included) - Super-Cardioid Microphone"
+  price: £8 per day
+  image_file_name: p48
+
+- title: Sennheiser MKH 8060
+  description: "(Rycote windshield with windjammer included) - Compact Shotgun Microphone"
+  price: £8 per day
+  image_file_name: 8060
+
+- title: Electro-Voice RE50/B
+  description: "Omni-directional Dynamic Vocal Microphone"
+  price: £5 per day
+  image_file_name: mike
+
+- title: WisyCom MCR42
+  description: "True Diversity Dual Receiver"
+  price: £30 per day
+  image_file_name: mcr42
+
+- title: WisyCom Wireless Camera Link
+  description: "MCR42 Dual Receiver with Vlock battery caddy mount and 2 MTP41 Transmitters"
+  price: £60 per day
+  image_file_name: camera-link
+
+- title: WisyCom MTP40S
+  description: "Pocket Transmitter (comes with Cos11)"
+  price: £15 per day
+  image_file_name: mtp40
+  
+- title: WisyCom MTP41
+  description: "​Small and light pocket transmitter"
+  price: £15 per day
+  image_file_name: mtp41
+  
+- title: WisyCom LNN1
+  description: "UHF Wideband Antenna"
+  price: £20 per set per day
+  image_file_name: lnn1
+
+- title: Lectrosonics Wireless Camera Link
+  description: "SRB Receiver in VLock Hawkwoods Battery Caddy with 2 SMDB Transmitters"
+  price: £60 per day
+  image_file_name: camera-link2
+
+- title: Lectrosonics SNA600A
+  description: "Antenna Dipole"
+  price: £20 per day
+  image_file_name: sna600
+
+- title: Audio Wireless Diversity Antenna Distribution DADM226
+  description: "Antenna Distribution unit with 3 Highrose Output"
+  price: £20 per day
+  image_file_name: DADM226
+
+- title: Zaxcom QRX200 Dual Receiver
+  description: "Wide Band 4 channel ENG receiver"
+  price: £30 per day
+  image_file_name: QRX200
+
+- title: Zaxcom TRXLA3.6 Transmitter
+  description: "Wide Band Transmitter featuring Zaxcom High Density Modulation"
+  price: £15 per day
+  image_file_name: tr6la
+
+- title: Audio Ltd 2040’s (Cos11’s included)
+  description: "Transmitter and Receiver unit. Reliable UHF diversity R.F performance. All functions are controlled via infra red key fob sized remote control."
+  price: £30 per set per day
+  image_file_name: 2040s
+
+- title: Sennheiser G3 IEM Set
+  description: "Channel 38 Transmitter and Receiver with Sony headphones"
+  price: £15 per day
+  image_file_name: g3
+
+- title: Sennheiser SKP2000
+  description: "Wireless Plug On Transmitter"
+  price: £10 per day
+  image_file_name: SKP2000
+
+- title: Panamic Boom Pole
+  description: "Lightweight Carbon Fibre Boom Pole comes in 4 or 5 stage"
+  price: £8 per day
+  image_file_name: pole
+
+- title: Sennheiser HD25
+  description: "​Industry Standard Headphones for Location Sound"
+  price: £5 per day
+  image_file_name: hd25
+
+- title: Timecode Buddy Systems Master
+  description: "Timecode and genlock generator, RF transceiver with simultaneous WiFi"
+  price: £10 per day
+  image_file_name: systemsmaster
+
+- title: Timecode Buddy Systems
+  description: "A multi-functional timecode, genlock and word clock generator with integrated RF transceiver and wifi"
+  price: £15 per day
+  image_file_name: systems
+
+- title: Tentacle Sync Timecode Lockits
+  description: "​Small, lightweight Timecode lockits for all cameras"
+  price: £15 per day
+  image_file_name: lockits
+
+- title: Motorola CP040 Walkie Talkie
+  description: "​Portable Communication Radio Unit"
+  price: £10 each per day
+  image_file_name: walkietalkie
+
+- title: Speakeasy v3A Speaker
+  description: "Self-contained, compact, high quality, battery powered speaker with a range of versatility"
+  price: £10 per day
+  image_file_name: speaker
+
+- title: TS-3 Timecode Slate
+  description: "​Generator/Reader Slate"
+  price: £20 per day
+  image_file_name: slate
+
+- title: Rock and Roller Trolley
+  description: "Multicart Trolley with 2 tier carpeted multi media shelves"
+  price: £10 per day
+  image_file_name: trolley
+
+- title: K-Tek “T” Shark Antenna Mount
+  description: 
+  price: £5 per day
+  image_file_name: mount
+
+- title: Zoom H5 Handy Recorder
+  description: "​Portable Digital Recorder"
+  price: £5 per day
+  image_file_name: recorder
