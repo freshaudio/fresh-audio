@@ -7,15 +7,8 @@
     {% include header.html %}
 
     <div class="page-content homepage">
-
-      <!-- 1, 2, 13, 3, 4, 7, 8, 9, 10, 11 -->
-
-      <!-- Slider main container -->
       <div class="swiper-container">
-          <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
-              <!-- Slides -->
-
               {% for slider in site.data.slider %}
                 <div class="swiper-slide">
                   <img data-src="{{ site.url }}/assets/carousel/{{slider.image_file_name}}.jpg" class="swiper-lazy">
@@ -31,14 +24,15 @@
           <!-- If we need pagination -->
           <!-- <div class="swiper-pagination"></div> -->
           
-          <!-- If we need navigation buttons -->
-<!--           <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div> -->
+          <!-- If we need navigation buttons
+               <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+          -->
           
-          <!-- If we need scrollbar -->
+          <!-- If we need scrollbar
           <div class="swiper-scrollbar"></div>
+           -->
       </div>
-
 
 
       <div class="homepage-content__strapline">
@@ -82,10 +76,6 @@
 
     {% include footer.html %}
     
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.jquery.min.js"></script> -->
-    <!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
-
-
     <script src="{{ site.url }}/assets/twitter-post-fetcher.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <!-- Initialize Swiper -->
