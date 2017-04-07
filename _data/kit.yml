@@ -76,12 +76,12 @@
 - title: Audio Wireless Diversity Antenna Distribution DADM226
   description: "Antenna Distribution unit with 3 Highrose Output"
   price: £20 per day
-  image_file_name: DADM226
+  image_file_name: dadm226
 
 - title: Zaxcom QRX200 Dual Receiver
   description: "Wide Band 4 channel ENG receiver"
   price: £30 per day
-  image_file_name: QRX200
+  image_file_name: qrx200
 
 - title: Zaxcom TRXLA3.6 Transmitter
   description: "Wide Band Transmitter featuring Zaxcom High Density Modulation"
@@ -101,7 +101,7 @@
 - title: Sennheiser SKP2000
   description: "Wireless Plug On Transmitter"
   price: £10 per day
-  image_file_name: SKP2000
+  image_file_name: skp2000
 
 - title: Panamic Boom Pole
   description: "Lightweight Carbon Fibre Boom Pole comes in 4 or 5 stage"
