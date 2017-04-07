@@ -50,7 +50,7 @@
   title: Goldrush
   channel: Discovery
 
-- image_file_name: show-celebrityStorageHunters
+- image_file_name: show-celebsStorage
   title: Celebrity Storage Hunters
   channel: Dave
 
@@ -114,7 +114,7 @@
   title: Hotel Inspector
   channel: Channel 5
 
-- image_file_name: show-dontTellTheBride
+- image_file_name: show-bride
   title: Don’t Tell the Bride
   channel: BBC3
 
@@ -154,11 +154,11 @@
   title: Richard E. Grant on Ealing Comedies
   channel: 
 
-- image_file_name: show-whosDoingTheDishes
+- image_file_name: show-dishes
   title: Who’s Doing the Dishes
   channel: ITV
 
-- image_file_name: show-tooMuchTV
+- image_file_name: show-tooMuch
   title: Too Much TV
   channel: BBC2
 
