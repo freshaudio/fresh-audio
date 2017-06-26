@@ -50,8 +50,16 @@
             </div>
 
             <div class="homepage-col homepage-cols__tweets">
-              <h2 class="homepage-cols__title">Fresh Tweets</h2>
+              <h2 class="homepage-cols__title"><a style="color: white;" href="https://twitter.com/freshaudiotv">Fresh Tweets</a></h2>
               <div id="js-homepage-cols__tweets"></div>
+              
+              <a class="twitter-timeline"
+                href="https://twitter.com/freshaudiotv"
+                data-chrome="noheader nofooter noborders noscrollbar transparent" data-tweet-limit="3">
+              Tweets by @freshaudiotv
+              </a>
+              <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
             </div>
 
             <div class="homepage-col homepage-cols__social">
@@ -76,7 +84,7 @@
 
     {% include footer.html %}
     
-    <script src="{{ site.url }}/assets/twitter-post-fetcher.js"></script>
+    <!-- <script src="{{ site.url }}/assets/twitter-post-fetcher.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
